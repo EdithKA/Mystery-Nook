@@ -1,0 +1,2239 @@
+fileFormatVersion: 2
+guid: 371223e27ecdced4ab4f2b119798d84e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 803
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f5b672e8cd71b43862132a457b0d7e
+      internalID: 236988016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 803
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5b1f0aad44cb64d81f68b9709d04b0
+      internalID: 573381191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 803
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bdbfd78c0f6b146969638070ac89b5
+      internalID: -2103655498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 803
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fece668d6ff264396916c2087d0aaf
+      internalID: -1384301176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 803
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288cc8b692286864f86161575463c983
+      internalID: 79061373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 803
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e29019d3d602d48967c3c96a9ffd99
+      internalID: 1188147560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_6
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 803
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ba49acd46dc6f48a34f678ef67b12f
+      internalID: -1944961658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 803
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e811a36ece15f54fbcf7ef37e542d47
+      internalID: -756607471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 737
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe32064459cd16a418772d52f881e38f
+      internalID: -1756524484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_9
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 737
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3c55c2788ade647ac6e20f5f5bb4f3
+      internalID: 898414893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 737
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8759644bce4f03468f63f3ce0c6272a
+      internalID: -1300339833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_11
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 737
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d51f326b851fa48b9cfe52e5204dfe
+      internalID: 1154924486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_12
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 737
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade6c5273d5569249b8d34dc60fb4a9c
+      internalID: -1865950878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 737
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0beffcc3123f5234280fc70f3038a249
+      internalID: -1104190320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_14
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 737
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76de0daec6033ad47b2a68b36b68948c
+      internalID: -26913126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_15
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 737
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8eaf92f26b04964885784e74d8f31e8
+      internalID: 1104179545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 671
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090fe5a3efd5b2142a7b11e0fd797620
+      internalID: 250848315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 671
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2681f3697d85fcb429279ee4d5bde19d
+      internalID: -682525630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 671
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40455fb09949594ea4b7015b6c021f5
+      internalID: 1795752882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_19
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 671
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142696cdf97fe854a8ff93cfa33176d9
+      internalID: 2033054746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_20
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 671
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764601e9a416684408f35aefbce584b9
+      internalID: 1776984146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 671
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0e77ba86fc73442a400f691f5dfda4
+      internalID: -1311831249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_22
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 671
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eead9c0f31059354a81191801f2a4c79
+      internalID: 172422590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_23
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 671
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9ca4d6de4726945b97e2c17c9e044b
+      internalID: 1581182004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 605
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77710e78a2ab8384f8387d7cfa4998c0
+      internalID: -159180523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_25
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 605
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57307fb3b2361084c9eb5cf545b111bd
+      internalID: 1139379938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_26
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 605
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b7ec56b345d8845a558c437e366582
+      internalID: 2009388029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_27
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 605
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61517c40fca84a4481b49f1463f68ad
+      internalID: -1808988593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_28
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 605
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cf0311eea561045b7a13b4c34ee9cd
+      internalID: -77677500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 605
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38932f9a986b5cd4b882a39204879c56
+      internalID: 1856249721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_30
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 605
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247c4089bea0daf46b5aa5cf81d1f3b4
+      internalID: 809956311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_31
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 605
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82db732cb669f3c44872137a249c7c47
+      internalID: -1552312091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_32
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 539
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83046cc9fe862ec4ba1bf83388142b8f
+      internalID: -2126570264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_33
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 539
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e01002e7aa860f4480502b9431fa3ff
+      internalID: -2070258649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_34
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 539
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd84949334a6dc24fa2a775e4cae05a6
+      internalID: -1192779560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_35
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 539
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb9894bb5c1e6d438a90119467dc9cc
+      internalID: 434784944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_36
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 539
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b64565578dfc594d81b265f537629f1
+      internalID: -2037627679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_37
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 539
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cf98ca3588dfb45a26738cdfadd99c
+      internalID: -676854470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_38
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 539
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04d61fa1392bb44eb042ebb7c389920
+      internalID: 1920722047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_39
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 539
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae394dacfb681c49a4afb9384c00730
+      internalID: 259186156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_40
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 473
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed67ff8ef35838446a0fc112d5b3d55e
+      internalID: 1315382778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_41
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 473
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79676d5e26adbda4e951fb5bc99d198f
+      internalID: -1380989261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_42
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 473
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630c9b32ac3857847b9704bb4cf79a3b
+      internalID: 1649331571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_43
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 473
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fba7806a429e54486b62c24ff25d37
+      internalID: -146008474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_44
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 473
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f01da044430504ab3d9de91b74a2fa
+      internalID: 1475316189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_45
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 473
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b50fd57f71114e40b1fe0fe1d56abbc
+      internalID: 1261684565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_46
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 473
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1a52096f9196b4eaafc42f14911221
+      internalID: -1607941971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_47
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 473
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d29825261b6de4a8ffe8c3a3247f32
+      internalID: 1254029231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_48
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 407
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18b427676d74874dae3abe75f78e36a
+      internalID: 1784136629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_49
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 407
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58eede75088f1df4687b4d257792df15
+      internalID: 1250489272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_50
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 407
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38d8ae3ab018194ab3cf5703c6397a3
+      internalID: 1841754743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_51
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 407
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8665f7c29e87a4c888bfd1f24efd13
+      internalID: 1355095645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_52
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 407
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df452c9392591bc44915f6a36ed82b93
+      internalID: -1727548622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_53
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 407
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5823b72b1b30b41b6ef5b81ec1d297
+      internalID: -1396565675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_54
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 407
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c583be5e2532b40bbe9892f44a3eff
+      internalID: -312340833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_55
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 407
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9a799f37d87454ca1150dd6b9c7e3b
+      internalID: -1556004088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_56
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 341
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0feb846297ffca46839d9ad96066e18
+      internalID: -1822525898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_57
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 341
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628e9145971057a4bb510476873d9ec3
+      internalID: -2138095576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_58
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 341
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c75edaad0322a94bb3cb4f089d44200
+      internalID: -565527308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_59
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 341
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef68948eac097264787019f2120dfb25
+      internalID: -1975531042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_60
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 341
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93abaeb3e006e9d4990014175b6aa31d
+      internalID: -1490716853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_61
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 341
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ac07900b0abd746bb2e717963e4842
+      internalID: -1979170950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_62
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 341
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91822b36fe5dee24180987dd77daeb6c
+      internalID: -1357487696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_63
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 341
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499ca022b3e9be042aafaccd0a532e32
+      internalID: 1366981501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_64
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 275
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4394ed11f9dd47b42ada91b600602c33
+      internalID: 1115732665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_65
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 275
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3be82136c9bbe34cbb9af87506bb3b3
+      internalID: -1136528067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_66
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 275
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1ff8711deb8fc43976d569e596ff2f
+      internalID: -1905307920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_67
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 275
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae740f0a573310e47b9b729c06ffb56d
+      internalID: -2123091572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_68
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 275
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dbae78dbfe1fa4686f21867d35368e
+      internalID: -1561580763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_69
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 275
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524c72f734025044098038d4cbd93298
+      internalID: -1501917282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_70
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 275
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44809cfc5dbda744c98f60bb28ead5d4
+      internalID: 1755176063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_71
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 275
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f257afdf514cbf4794e55daf27db615
+      internalID: 897229067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_72
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 209
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4151ce4e9050ecd49a477363d08c27a8
+      internalID: 2054589325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_73
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 209
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3aa43bfb12c8e24990b7e82e7ed5498
+      internalID: -2010833193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_74
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 209
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c132516d5e10d4409f43c357d8746ed
+      internalID: 513735084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_75
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 209
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0ad3c45d14cfb4f9ebd4799b2330b0
+      internalID: -505016642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_76
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 209
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5468b27b65206488af5d50ea433384
+      internalID: 671907558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_77
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 209
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17a1a4e9db1d934b9778777a6d21dbb
+      internalID: 1136079931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_78
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 209
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbabdefeb7379484fb62b4317b407ed4
+      internalID: 507156764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_79
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 209
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d77f38b853f2f74ab3f002179c73f05
+      internalID: 1224618288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_80
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 143
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c42896e9df442c46a69b8e2f2816d63
+      internalID: -1821433944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_81
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 143
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a2335e958ff0e499cbd84083186e08
+      internalID: 2140264775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_82
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 77
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5487421e2599e47b319979a770c3f6
+      internalID: 496061916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_83
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 77
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84a8f2d0d0958544a55508001ebbce8
+      internalID: -1856422264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_84
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 77
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c015bfed65b6836439c2f26346f49902
+      internalID: 1507696249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_85
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 77
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c2b88426ee9324fa9f96492292e873
+      internalID: -1186474615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_86
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 77
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffdb06e140216340823e33640edbc70
+      internalID: -1585920315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_87
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 77
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b12d3f021db3554e92243ee43449597
+      internalID: 1684634925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_88
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 76
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268c11d047c366e429b744d45c13312d
+      internalID: -873257071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_89
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 10
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a28dcb2ab618c948b401e80ce4825bd
+      internalID: 1257360998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_90
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 10
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ffc3ec19145d748ad808a4c43e73a0
+      internalID: 1137582513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_91
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 10
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a23d32350c52349ac9ce73c4970f5c
+      internalID: -455237393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_92
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 10
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177fc3cdc1597c34fa663bdf98c759ff
+      internalID: 953746707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_93
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 10
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f26e8b461f4ef49806c12a81ee14b7
+      internalID: -1066537694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_94
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 10
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f2d3cc082a9524bb9f5a577a405679
+      internalID: 743627270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MirrorFall Demo - Wizard Cat_95
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e07e6d794588a042aa7dbe9b3defe5a
+      internalID: -1208377531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - MirrorFall Demo - Wizard Cat_0: 236988016
+      PC Computer - MirrorFall Demo - Wizard Cat_1: 573381191
+      PC Computer - MirrorFall Demo - Wizard Cat_10: -1300339833
+      PC Computer - MirrorFall Demo - Wizard Cat_11: 1154924486
+      PC Computer - MirrorFall Demo - Wizard Cat_12: -1865950878
+      PC Computer - MirrorFall Demo - Wizard Cat_13: -1104190320
+      PC Computer - MirrorFall Demo - Wizard Cat_14: -26913126
+      PC Computer - MirrorFall Demo - Wizard Cat_15: 1104179545
+      PC Computer - MirrorFall Demo - Wizard Cat_16: 250848315
+      PC Computer - MirrorFall Demo - Wizard Cat_17: -682525630
+      PC Computer - MirrorFall Demo - Wizard Cat_18: 1795752882
+      PC Computer - MirrorFall Demo - Wizard Cat_19: 2033054746
+      PC Computer - MirrorFall Demo - Wizard Cat_2: -2103655498
+      PC Computer - MirrorFall Demo - Wizard Cat_20: 1776984146
+      PC Computer - MirrorFall Demo - Wizard Cat_21: -1311831249
+      PC Computer - MirrorFall Demo - Wizard Cat_22: 172422590
+      PC Computer - MirrorFall Demo - Wizard Cat_23: 1581182004
+      PC Computer - MirrorFall Demo - Wizard Cat_24: -159180523
+      PC Computer - MirrorFall Demo - Wizard Cat_25: 1139379938
+      PC Computer - MirrorFall Demo - Wizard Cat_26: 2009388029
+      PC Computer - MirrorFall Demo - Wizard Cat_27: -1808988593
+      PC Computer - MirrorFall Demo - Wizard Cat_28: -77677500
+      PC Computer - MirrorFall Demo - Wizard Cat_29: 1856249721
+      PC Computer - MirrorFall Demo - Wizard Cat_3: -1384301176
+      PC Computer - MirrorFall Demo - Wizard Cat_30: 809956311
+      PC Computer - MirrorFall Demo - Wizard Cat_31: -1552312091
+      PC Computer - MirrorFall Demo - Wizard Cat_32: -2126570264
+      PC Computer - MirrorFall Demo - Wizard Cat_33: -2070258649
+      PC Computer - MirrorFall Demo - Wizard Cat_34: -1192779560
+      PC Computer - MirrorFall Demo - Wizard Cat_35: 434784944
+      PC Computer - MirrorFall Demo - Wizard Cat_36: -2037627679
+      PC Computer - MirrorFall Demo - Wizard Cat_37: -676854470
+      PC Computer - MirrorFall Demo - Wizard Cat_38: 1920722047
+      PC Computer - MirrorFall Demo - Wizard Cat_39: 259186156
+      PC Computer - MirrorFall Demo - Wizard Cat_4: 79061373
+      PC Computer - MirrorFall Demo - Wizard Cat_40: 1315382778
+      PC Computer - MirrorFall Demo - Wizard Cat_41: -1380989261
+      PC Computer - MirrorFall Demo - Wizard Cat_42: 1649331571
+      PC Computer - MirrorFall Demo - Wizard Cat_43: -146008474
+      PC Computer - MirrorFall Demo - Wizard Cat_44: 1475316189
+      PC Computer - MirrorFall Demo - Wizard Cat_45: 1261684565
+      PC Computer - MirrorFall Demo - Wizard Cat_46: -1607941971
+      PC Computer - MirrorFall Demo - Wizard Cat_47: 1254029231
+      PC Computer - MirrorFall Demo - Wizard Cat_48: 1784136629
+      PC Computer - MirrorFall Demo - Wizard Cat_49: 1250489272
+      PC Computer - MirrorFall Demo - Wizard Cat_5: 1188147560
+      PC Computer - MirrorFall Demo - Wizard Cat_50: 1841754743
+      PC Computer - MirrorFall Demo - Wizard Cat_51: 1355095645
+      PC Computer - MirrorFall Demo - Wizard Cat_52: -1727548622
+      PC Computer - MirrorFall Demo - Wizard Cat_53: -1396565675
+      PC Computer - MirrorFall Demo - Wizard Cat_54: -312340833
+      PC Computer - MirrorFall Demo - Wizard Cat_55: -1556004088
+      PC Computer - MirrorFall Demo - Wizard Cat_56: -1822525898
+      PC Computer - MirrorFall Demo - Wizard Cat_57: -2138095576
+      PC Computer - MirrorFall Demo - Wizard Cat_58: -565527308
+      PC Computer - MirrorFall Demo - Wizard Cat_59: -1975531042
+      PC Computer - MirrorFall Demo - Wizard Cat_6: -1944961658
+      PC Computer - MirrorFall Demo - Wizard Cat_60: -1490716853
+      PC Computer - MirrorFall Demo - Wizard Cat_61: -1979170950
+      PC Computer - MirrorFall Demo - Wizard Cat_62: -1357487696
+      PC Computer - MirrorFall Demo - Wizard Cat_63: 1366981501
+      PC Computer - MirrorFall Demo - Wizard Cat_64: 1115732665
+      PC Computer - MirrorFall Demo - Wizard Cat_65: -1136528067
+      PC Computer - MirrorFall Demo - Wizard Cat_66: -1905307920
+      PC Computer - MirrorFall Demo - Wizard Cat_67: -2123091572
+      PC Computer - MirrorFall Demo - Wizard Cat_68: -1561580763
+      PC Computer - MirrorFall Demo - Wizard Cat_69: -1501917282
+      PC Computer - MirrorFall Demo - Wizard Cat_7: -756607471
+      PC Computer - MirrorFall Demo - Wizard Cat_70: 1755176063
+      PC Computer - MirrorFall Demo - Wizard Cat_71: 897229067
+      PC Computer - MirrorFall Demo - Wizard Cat_72: 2054589325
+      PC Computer - MirrorFall Demo - Wizard Cat_73: -2010833193
+      PC Computer - MirrorFall Demo - Wizard Cat_74: 513735084
+      PC Computer - MirrorFall Demo - Wizard Cat_75: -505016642
+      PC Computer - MirrorFall Demo - Wizard Cat_76: 671907558
+      PC Computer - MirrorFall Demo - Wizard Cat_77: 1136079931
+      PC Computer - MirrorFall Demo - Wizard Cat_78: 507156764
+      PC Computer - MirrorFall Demo - Wizard Cat_79: 1224618288
+      PC Computer - MirrorFall Demo - Wizard Cat_8: -1756524484
+      PC Computer - MirrorFall Demo - Wizard Cat_80: -1821433944
+      PC Computer - MirrorFall Demo - Wizard Cat_81: 2140264775
+      PC Computer - MirrorFall Demo - Wizard Cat_82: 496061916
+      PC Computer - MirrorFall Demo - Wizard Cat_83: -1856422264
+      PC Computer - MirrorFall Demo - Wizard Cat_84: 1507696249
+      PC Computer - MirrorFall Demo - Wizard Cat_85: -1186474615
+      PC Computer - MirrorFall Demo - Wizard Cat_86: -1585920315
+      PC Computer - MirrorFall Demo - Wizard Cat_87: 1684634925
+      PC Computer - MirrorFall Demo - Wizard Cat_88: -873257071
+      PC Computer - MirrorFall Demo - Wizard Cat_89: 1257360998
+      PC Computer - MirrorFall Demo - Wizard Cat_9: 898414893
+      PC Computer - MirrorFall Demo - Wizard Cat_90: 1137582513
+      PC Computer - MirrorFall Demo - Wizard Cat_91: -455237393
+      PC Computer - MirrorFall Demo - Wizard Cat_92: 953746707
+      PC Computer - MirrorFall Demo - Wizard Cat_93: -1066537694
+      PC Computer - MirrorFall Demo - Wizard Cat_94: 743627270
+      PC Computer - MirrorFall Demo - Wizard Cat_95: -1208377531
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
