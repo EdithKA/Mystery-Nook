@@ -14,7 +14,9 @@ public class SnakeController : MonoBehaviour
     int direction = 1;
 
     Animator animator;
-    
+
+    public ParticleSystem moveEffect;
+
 
 
     void Start()
@@ -74,6 +76,7 @@ public class SnakeController : MonoBehaviour
         
         if(collision.gameObject.tag == "arrow")
         {
+            moveEffect.Stop();
             StartCoroutine(Death());
         }
     }

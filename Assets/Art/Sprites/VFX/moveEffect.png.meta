@@ -1,0 +1,2921 @@
+fileFormatVersion: 2
+guid: 3b141db8f8cb4e34da948af6a51aedd7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: moveEffect_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1729
+        width: 177
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3fa4a0effff274486635bb4c670d54
+      internalID: -958201711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1831
+        width: 4
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d447f95765d5a749bbd59d5d501044b
+      internalID: 598369151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1734
+        width: 184
+        height: 179
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80df07287650592458f627a3863c6fa1
+      internalID: 666445926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_3
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1734
+        width: 178
+        height: 179
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf141b306f275274f8271782d73a21fa
+      internalID: -403077468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_4
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1732
+        width: 183
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c196ebb3d0962448a22301ae2ebc723
+      internalID: -1357940044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_5
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1731
+        width: 177
+        height: 184
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d7d9bcaec1d9f49aaf431287b3a961
+      internalID: -980063462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1798
+        width: 4
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5dfdcabee443246b7659c0773001d3
+      internalID: -1032910232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1797
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa364922f9671274b902e680e88b6c20
+      internalID: 759323028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_8
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1796
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f102a14ea57adcd4b8726ad1455bfe08
+      internalID: 1012101362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_9
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1788
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf579cc1b85b6f947b4f898127ca0690
+      internalID: -1961248050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1538
+        width: 178
+        height: 186
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1aac9e12d5b5e14fa96e9a5d852b57b
+      internalID: -917871805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_11
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1720
+        width: 8
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e8dadc1aa16c24491b4c4534b94d68
+      internalID: -1806793372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_12
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1721
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e705f60ef07ef14cb6b9c3d8054f144
+      internalID: 721834830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_13
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1722
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d323f4c711096d4494f4152d9091b39
+      internalID: 705036246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_14
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1719
+        width: 5
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590a5c1f099907f4688934ab11614a12
+      internalID: 1921917854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_15
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1538
+        width: 173
+        height: 189
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6563531cd949c0f45aea63d810ca95b9
+      internalID: -551625765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1540
+        width: 180
+        height: 179
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed7009041322ec45bfcce7628dedf23
+      internalID: 912909337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_17
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1716
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a1acea22ae31644b6d0143381b7812
+      internalID: -1696374091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_18
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1540
+        width: 183
+        height: 181
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b593cbcd281a9439e8362b3339d0ee
+      internalID: -606635300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_19
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 1539
+        width: 180
+        height: 180
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c92fcf3df3cbe4499ba4b20bae2ec5a
+      internalID: 1696087638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_20
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1622
+        width: 6
+        height: 9
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61551e767bd53274eb01128cc450b6ad
+      internalID: 347758691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_21
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1621
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f24bc4e4afb114fac8c46837605047
+      internalID: -20187988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_22
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1597
+        width: 4
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f8ed9a26d2b3c4d871545b1d5a1d87
+      internalID: 984361282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_23
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1601
+        width: 5
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e35bd2842185e48b1cd3a16bccb941
+      internalID: 1306557411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_24
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1539
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f458c1aeec077714f9c971a25af71cce
+      internalID: -550768421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_25
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1538
+        width: 5
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34996a0e62bd88a419b1b9dd8e1e1e3d
+      internalID: -1021476924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_26
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1537
+        width: 5
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfebd352a2376d40a463eaaf8cc2a12
+      internalID: 153227384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1428
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696c6ff520ffaa949bb799682b119609
+      internalID: -4264605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1344
+        width: 183
+        height: 185
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586b25e62b95eb845b8b48c64d18baa5
+      internalID: -2061642450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1346
+        width: 174
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2468cd288850ac47adfb29bc462fd76
+      internalID: 270553249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_30
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1345
+        width: 184
+        height: 185
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ed116bbe7d6ab49af332805dcf877d
+      internalID: -2005565631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_31
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1344
+        width: 178
+        height: 187
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c37f430be8483249afcc275d1902289
+      internalID: 1917083858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_32
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1344
+        width: 180
+        height: 188
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74e35316eec2da4ba18e38f9db0a3cf
+      internalID: 183306027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_33
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1408
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376bb2eb8f2aed64d8d72a27f1be8c41
+      internalID: -787018231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_34
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1407
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afefc69b08715af41be5940d837b6936
+      internalID: -1291496633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_35
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1154
+        width: 177
+        height: 185
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cec5341ebea8514486aa86a0d26f4a1
+      internalID: 1189691231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_36
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1337
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4654e61121a9f924f8dd854e38e38990
+      internalID: 928650190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_37
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1338
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0f8011e517c484a9d519c4b54edfd2
+      internalID: -1323381362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_38
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1157
+        width: 185
+        height: 186
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38917b0dfb1b77844a646ab880b92848
+      internalID: -1991611804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_39
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1155
+        width: 179
+        height: 185
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb1804baa910cf49b6e479b498d10c6
+      internalID: -1476265626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_40
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1236
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e522a6101a3b247a7b6c779cc55427
+      internalID: 308214758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_41
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1153
+        width: 173
+        height: 183
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbb2a7688c54c447b9c8712199514a0
+      internalID: 751920170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_42
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1236
+        width: 4
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f860f5f2b7b924742a4a93ec3bd78272
+      internalID: -1420040959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_43
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1156
+        width: 175
+        height: 181
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677a44268087d454b8e07621ad83a626
+      internalID: 709934891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_44
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1238
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a732a451466214ab23ebcfbb4ebec7
+      internalID: 631090412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_45
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1221
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bcd07d20df3db43a2b420a0035d3d0
+      internalID: -933123292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_46
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1222
+        width: 4
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ed3a6001a44e445815e37bc88bd3ff
+      internalID: 1897434680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_47
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1154
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f683619134233b40949ca1d3b3c08d1
+      internalID: 1053564206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_48
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1153
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00ee25c600fd0642801187809efe041
+      internalID: 382197005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_49
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1155
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d255d787841ae47887172c359ea856
+      internalID: 475867608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_50
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1152
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fbede613c99fe42bbbbfb3089045a8
+      internalID: 1449334483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_51
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1142
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8341f53f8b0464a82cd5020e6e3ac4
+      internalID: -584206067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_52
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1144
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb3c1c3cc19f0746aa904510252799d
+      internalID: 402385609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_53
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 963
+        width: 184
+        height: 185
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f410656cebc98143a957957d5d24715
+      internalID: -1534391428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_54
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 965
+        width: 184
+        height: 184
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a2a0876b2993e4ea995ce6092d5258
+      internalID: 599289584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_55
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 964
+        width: 184
+        height: 181
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4542524e3f7cf43be6f01a5179b02b
+      internalID: -873289601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_56
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 960
+        width: 180
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76f65330f20a294fb64634ffd85e458
+      internalID: -1870975001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_57
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 962
+        width: 182
+        height: 181
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba9a33e2afb1a44d804d55942dd5be7
+      internalID: 1062939780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_58
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 962
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047b5d99dfa17a143b7409c0de380ad8
+      internalID: -1263229236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_59
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 960
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3652139541f643b46822183c5585230f
+      internalID: 1705329675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_60
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 771
+        width: 181
+        height: 184
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb58e47e3799a143965c509394f5c6a
+      internalID: 555419845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_61
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 950
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647f764da422dd942b14cff32c954388
+      internalID: 1569160120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_62
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 771
+        width: 176
+        height: 184
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1f5a4a0d111b74aa024a318b62957c
+      internalID: -1215600022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_63
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 953
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6db4bcb81cc9a34aaa61b41e5c143e9
+      internalID: 385508335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_64
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 763
+        width: 181
+        height: 190
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82deb8b6353cd9c488433dbd3e24ae75
+      internalID: -1522664177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_65
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 872
+        width: 4
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40670bd10fb1474dad1d5acd26b54f3
+      internalID: -1519198672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_66
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 874
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f238543221f1f624ab8e8d09791f9d86
+      internalID: -1406222779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_67
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 769
+        width: 185
+        height: 180
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716349bb84fa27c4dad77efab077eb3d
+      internalID: -834884969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_68
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 769
+        width: 179
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b50be5c88dab9c4286eaadb2c70e6bf
+      internalID: 1536264927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_69
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 850
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271ef681bb592db4e848c7b991b06285
+      internalID: -1700022945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_70
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 843
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7baaff1dd760e428e85255e576a819
+      internalID: 976662698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_71
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 844
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904a76c231c15a641a34fb5a9a9f0a8e
+      internalID: 1107374580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_72
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 828
+        width: 6
+        height: 9
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f96a0b93cbd1343a2a9feef46600f0
+      internalID: -897745390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_73
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 827
+        width: 6
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325e63d175962b24c8a51028f876cec3
+      internalID: 467352515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_74
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 828
+        width: 4
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be51aa4cd695a10418da27f0a6ca81fe
+      internalID: 1553143348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_75
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 826
+        width: 4
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d5fb2318b5aa0419ef682954f40671
+      internalID: 241677966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_76
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 770
+        width: 5
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bbbfbcf99f5f34585927a22a64f731
+      internalID: 203597932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_77
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 580
+        width: 181
+        height: 180
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0047d98d43cf7aa4287885bdadc45244
+      internalID: -1985022697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_78
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 588
+        width: 189
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822569a1ab8e51c49a8218a1b4321d86
+      internalID: -1942523403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_79
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 655
+        width: 4
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94149371ef1d54a4ab36ef47d6c8b9b2
+      internalID: 699560376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_80
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 589
+        width: 181
+        height: 172
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e69e8ccf8d6e5a43a7e09a749dbc81a
+      internalID: 118177688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_81
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 654
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae71ac903203a04d8cf49acbfe27cea
+      internalID: -1003707805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_82
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 588
+        width: 182
+        height: 174
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521590e89b267294e86092556a448cac
+      internalID: -951877216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_83
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 653
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31c48f14d50469419bb233c69b75d28
+      internalID: -1295584788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_84
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 587
+        width: 185
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd7f45143f68c94f97591c28b0e7727
+      internalID: 220509183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_85
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 577
+        width: 18
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63a9ce98b673a94aba74ac4ba79503d
+      internalID: 1732671973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_86
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 577
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d4ca0422e3b0d40a7256f6d0ea189d
+      internalID: -2038071448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_87
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 580
+        width: 9
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7660c6eac210f0442a40814017d85395
+      internalID: -1093566142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_88
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 577
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a604a91060b6514e9a67fabd1e0dcbb
+      internalID: -305977957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_89
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 579
+        width: 9
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84671e4849f7b54489633bcbba5335c8
+      internalID: -2058089777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_90
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 579
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894a46206298efd408d310ac55216714
+      internalID: 2089126500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_91
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 576
+        width: 5
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6cca32c1f26b04bb7f2d68e00d353b
+      internalID: 1632077178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_92
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 569
+        width: 7
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743ca40f3e5c2c545b968b642c75e38c
+      internalID: 926366007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_93
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 570
+        width: 7
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4541e9322bea1545af83c6f81c780c3
+      internalID: 1509307492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_94
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 391
+        width: 180
+        height: 186
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2af9a45e25eb447afd97cc60b10743
+      internalID: 134844018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_95
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 394
+        width: 189
+        height: 178
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c017a04642cea1740bfd0d199b4a7f86
+      internalID: -1415477449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_96
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 394
+        width: 184
+        height: 178
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fd6fa0f1cc30044819bdc02d4cfdd8
+      internalID: 691319435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_97
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 493
+        width: 4
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29606262bbd5454b834e575c0c23a43
+      internalID: 21653011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_98
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 393
+        width: 186
+        height: 177
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6ce2a38265df249b04ada63bc54112
+      internalID: -1729557076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_99
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 495
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f75797c2991c542b2a665406d32e89
+      internalID: -1180861401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_100
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 392
+        width: 188
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9b30e596cea524db7f22cbe3561489
+      internalID: 1186170873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_101
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 496
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3e885f6bf184c4688f84eb86e23afe
+      internalID: -448301160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_102
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 498
+        width: 4
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d3965616dd04f4188e6f2c30b8c50d
+      internalID: -928787238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_103
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 482
+        width: 4
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b8fbd3264dcc842a5fba8ab50071ac
+      internalID: 1206232850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_104
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 198
+        width: 185
+        height: 180
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae6452b23eac474a88d4cc8af60fb23
+      internalID: 744366230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_105
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 198
+        width: 186
+        height: 181
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388ae61de680a2747b2f6c941dd61717
+      internalID: 798037726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_106
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 371
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294ecd92dc8cb1f48a28ba0bbc82442a
+      internalID: 1418714103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_107
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 196
+        width: 185
+        height: 179
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dae83b6ca9511c4792cdc3729d28a1d
+      internalID: -1273127185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_108
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 373
+        width: 5
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb656586d1dd9d4ea55d711fe5be344
+      internalID: 466539572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_109
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 372
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c3272c3a5f47046ad5725992e44286
+      internalID: -1544220634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_110
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 374
+        width: 5
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ba800a2b232d248b5104a7135d844f
+      internalID: -1318655887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_111
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 289
+        width: 4
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5942869586916e4a9dd74db1d5477d0
+      internalID: 315643728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_112
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 197
+        width: 183
+        height: 177
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a08f191f094104fba0c3bc69d3872b
+      internalID: -565345146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_113
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 197
+        width: 185
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244bc59eddd90fd4e88db5e03836f0b9
+      internalID: 147145092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_114
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 195
+        width: 25
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92846b3787574de4fad31b0169240c46
+      internalID: 310451038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_115
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 8
+        width: 181
+        height: 176
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cd9b7daa30356458fc6772b02d59f7
+      internalID: -1705969201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_116
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 92
+        width: 17
+        height: 40
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718528094b3a4ec4bac629a35fe44c09
+      internalID: 1997488165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_117
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 9
+        width: 179
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84ee087fa6538a439b3a4213eaef006
+      internalID: 1622223227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_118
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 99
+        width: 4
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9860859d6dd61c4b9f6ef2a803bf08f
+      internalID: 595177001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_119
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 8
+        width: 188
+        height: 175
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bd601dc4a0977408964a870309479f
+      internalID: -685562257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_120
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 83
+        width: 4
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e6e57dfc975d44e85bced2fe3f992e
+      internalID: -770019699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_121
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 84
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a54967bea4ecbf4183bf2df012e0e7d
+      internalID: -588910962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_122
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 63
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122f198e616b85744ae35aa184da9740
+      internalID: -1367382925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_123
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 64
+        width: 4
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383ce6d794b5f1f40a9802abe6dae620
+      internalID: 558335314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_124
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 5
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3d956a581c958428f2a0ef2e981c65
+      internalID: -441495319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_125
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 4
+        width: 7
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd947c77feab10f47ba458526ac7f346
+      internalID: 977323423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moveEffect_126
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b40f20e987c1a74b9a6f9b5c31fc70d
+      internalID: 26582390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      moveEffect_0: -958201711
+      moveEffect_1: 598369151
+      moveEffect_10: -917871805
+      moveEffect_100: 1186170873
+      moveEffect_101: -448301160
+      moveEffect_102: -928787238
+      moveEffect_103: 1206232850
+      moveEffect_104: 744366230
+      moveEffect_105: 798037726
+      moveEffect_106: 1418714103
+      moveEffect_107: -1273127185
+      moveEffect_108: 466539572
+      moveEffect_109: -1544220634
+      moveEffect_11: -1806793372
+      moveEffect_110: -1318655887
+      moveEffect_111: 315643728
+      moveEffect_112: -565345146
+      moveEffect_113: 147145092
+      moveEffect_114: 310451038
+      moveEffect_115: -1705969201
+      moveEffect_116: 1997488165
+      moveEffect_117: 1622223227
+      moveEffect_118: 595177001
+      moveEffect_119: -685562257
+      moveEffect_12: 721834830
+      moveEffect_120: -770019699
+      moveEffect_121: -588910962
+      moveEffect_122: -1367382925
+      moveEffect_123: 558335314
+      moveEffect_124: -441495319
+      moveEffect_125: 977323423
+      moveEffect_126: 26582390
+      moveEffect_13: 705036246
+      moveEffect_14: 1921917854
+      moveEffect_15: -551625765
+      moveEffect_16: 912909337
+      moveEffect_17: -1696374091
+      moveEffect_18: -606635300
+      moveEffect_19: 1696087638
+      moveEffect_2: 666445926
+      moveEffect_20: 347758691
+      moveEffect_21: -20187988
+      moveEffect_22: 984361282
+      moveEffect_23: 1306557411
+      moveEffect_24: -550768421
+      moveEffect_25: -1021476924
+      moveEffect_26: 153227384
+      moveEffect_27: -4264605
+      moveEffect_28: -2061642450
+      moveEffect_29: 270553249
+      moveEffect_3: -403077468
+      moveEffect_30: -2005565631
+      moveEffect_31: 1917083858
+      moveEffect_32: 183306027
+      moveEffect_33: -787018231
+      moveEffect_34: -1291496633
+      moveEffect_35: 1189691231
+      moveEffect_36: 928650190
+      moveEffect_37: -1323381362
+      moveEffect_38: -1991611804
+      moveEffect_39: -1476265626
+      moveEffect_4: -1357940044
+      moveEffect_40: 308214758
+      moveEffect_41: 751920170
+      moveEffect_42: -1420040959
+      moveEffect_43: 709934891
+      moveEffect_44: 631090412
+      moveEffect_45: -933123292
+      moveEffect_46: 1897434680
+      moveEffect_47: 1053564206
+      moveEffect_48: 382197005
+      moveEffect_49: 475867608
+      moveEffect_5: -980063462
+      moveEffect_50: 1449334483
+      moveEffect_51: -584206067
+      moveEffect_52: 402385609
+      moveEffect_53: -1534391428
+      moveEffect_54: 599289584
+      moveEffect_55: -873289601
+      moveEffect_56: -1870975001
+      moveEffect_57: 1062939780
+      moveEffect_58: -1263229236
+      moveEffect_59: 1705329675
+      moveEffect_6: -1032910232
+      moveEffect_60: 555419845
+      moveEffect_61: 1569160120
+      moveEffect_62: -1215600022
+      moveEffect_63: 385508335
+      moveEffect_64: -1522664177
+      moveEffect_65: -1519198672
+      moveEffect_66: -1406222779
+      moveEffect_67: -834884969
+      moveEffect_68: 1536264927
+      moveEffect_69: -1700022945
+      moveEffect_7: 759323028
+      moveEffect_70: 976662698
+      moveEffect_71: 1107374580
+      moveEffect_72: -897745390
+      moveEffect_73: 467352515
+      moveEffect_74: 1553143348
+      moveEffect_75: 241677966
+      moveEffect_76: 203597932
+      moveEffect_77: -1985022697
+      moveEffect_78: -1942523403
+      moveEffect_79: 699560376
+      moveEffect_8: 1012101362
+      moveEffect_80: 118177688
+      moveEffect_81: -1003707805
+      moveEffect_82: -951877216
+      moveEffect_83: -1295584788
+      moveEffect_84: 220509183
+      moveEffect_85: 1732671973
+      moveEffect_86: -2038071448
+      moveEffect_87: -1093566142
+      moveEffect_88: -305977957
+      moveEffect_89: -2058089777
+      moveEffect_9: -1961248050
+      moveEffect_90: 2089126500
+      moveEffect_91: 1632077178
+      moveEffect_92: 926366007
+      moveEffect_93: 1509307492
+      moveEffect_94: 134844018
+      moveEffect_95: -1415477449
+      moveEffect_96: 691319435
+      moveEffect_97: 21653011
+      moveEffect_98: -1729557076
+      moveEffect_99: -1180861401
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
