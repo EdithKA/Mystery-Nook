@@ -1,47 +1,66 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 3.0f;
+    public static event Action OnPlayerDamaged;
+    public static event Action OnPlayerDeath;
 
-    public int maxHealth = 5;
+
+    public float speed = 3.0f;
+    public int maxHealth;
 
     public GameObject arrowPrefab;
 
-    public int health { get { return currentHealth; } }
-    int currentHealth;
+    private int currentHealth;
+    
 
     public float timeInvincible = 2.0f;
-    bool isInvincible;
-    float invincibleTimer;
+    private bool isInvincible;
+    private float invincibleTimer;
 
-    Rigidbody2D rigidbody2d;
-    float horizontal;
-    float vertical;
+    private Rigidbody2D rigidbody2d;
+    private float horizontal;
+    private float vertical;
 
-    Animator animator;
-    Vector2 lookDirection = new Vector2(1, 0);
+    private Animator animator;
+    private Vector2 lookDirection = new Vector2(1, 0);
 
     public AudioClip throwSound;
     public AudioClip hitSound;
 
-    AudioSource audioSource;
-    public GameObject arrowObject;
+    private AudioSource audioSource;
+    private GameObject arrowObject;
+
+    public int health { get { return currentHealth; } }
+    private HeartsBarController heartsBarController;
+
+
+    private void Awake()
+    {
+        currentHealth = maxHealth;
+       
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        heartsBarController = FindObjectOfType<HeartsBarController>();
+
+        
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
-        currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
 
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(health);
+
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
@@ -68,6 +87,15 @@ public class PlayerController : MonoBehaviour
         {
             Shoot();
         }
+
+        OnPlayerDamaged?.Invoke();
+        
+
+        if (currentHealth <= 0)
+        {
+            OnPlayerDeath?.Invoke();
+        }
+        
     }
 
     void FixedUpdate()
@@ -93,20 +121,23 @@ public class PlayerController : MonoBehaviour
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
+        // Llama a DrawHearts cada vez que cambia la salud
+        heartsBarController.DrawHearts();
+
+        if (currentHealth <= 0)
+        {
+            OnPlayerDeath?.Invoke();
+        }
     }
+
 
     void Shoot()
     {
         arrowObject = Instantiate(arrowPrefab, rigidbody2d.position + Vector2.up * 0.01f, Quaternion.identity);
-        
         Arrow arrow = arrowObject.GetComponent<Arrow>();
-
-       
         arrow.shootDirection = lookDirection;
         arrow.Shoot(lookDirection, 300);
 
-
-        
         animator.SetTrigger("Shoot");
         PlaySound(throwSound);
     }
@@ -114,5 +145,13 @@ public class PlayerController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            ChangeHealth(-1);
+        }
     }
 }

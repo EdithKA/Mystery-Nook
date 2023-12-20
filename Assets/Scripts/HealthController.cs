@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour
 {
-
     public Sprite fullHeart, damageHeart, emptyHeart;
     Image heartImage;
 
@@ -14,25 +13,24 @@ public class HealthController : MonoBehaviour
         heartImage = GetComponent<Image>();
     }
 
-    void SetHeartSprite(HeartStatus status)
+    public void SetHeartSprite(HeartSprite status)
     {
         switch (status)
-
         {
-            case HeartStatus.Empty:
+            case HeartSprite.Empty:
                 heartImage.sprite = emptyHeart;
                 break;
-            case HeartStatus.Damage:
+            case HeartSprite.Damage:
                 heartImage.sprite = damageHeart;
                 break;
-            case HeartStatus.Full:
+            case HeartSprite.Full:
                 heartImage.sprite = fullHeart;
                 break;
         }
     }
 }
 
-public enum HeartStatus
+public enum HeartSprite
 {
     Empty = 0,
     Damage = 1,

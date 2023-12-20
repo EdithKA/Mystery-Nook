@@ -15,7 +15,7 @@ public class CatController : MonoBehaviour
 
     Animator animator;
 
-    public ParticleSystem moveEffect;
+  
 
 
 
