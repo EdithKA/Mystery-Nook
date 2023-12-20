@@ -128,7 +128,6 @@ MonoBehaviour:
   timeInvincible: 2
   throwSound: {fileID: 8300000, guid: acfa0b86581d68344a8ee45e459ce125, type: 3}
   hitSound: {fileID: 8300000, guid: 467d5cdd3aae2a747a895eda4bb99535, type: 3}
-  arrowObject: {fileID: 0}
 --- !u!50 &7551626819917810174
 Rigidbody2D:
   serializedVersion: 4
@@ -284,16 +283,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.2596998}
+  m_Offset: {x: -0.0010777712, y: -0.27694255}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.9}
+    oldSize: {x: 0.6, y: 1.08}
     newSize: {x: 0.5, y: 0.9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.2931226}
+  m_Size: {x: 0.60561204, y: 0.46555054}
   m_EdgeRadius: 0

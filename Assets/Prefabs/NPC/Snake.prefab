@@ -31,10 +31,9 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6566528, y: 1.6566528, z: 1.6566528}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5222668639701946093}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1744775218597521691
@@ -122,7 +121,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -197,87 +196,4 @@ MonoBehaviour:
   speed: 1
   vertical: 0
   changeTime: 2
-  moveEffect: {fileID: 8536501496903382672}
---- !u!1001 &3936624346139758160
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 3632856185435016187}
-    m_Modifications:
-    - target: {fileID: 3979891294280861804, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_Name
-      value: MoveEffect
-      objectReference: {fileID: 0}
-    - target: {fileID: 6959610454816055506, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.86019504
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.86019504
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.86019504
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.185
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.199
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.03566712
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 458cc299504643742b60f057630c63b5, type: 3}
---- !u!4 &5222668639701946093 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9140925744460939453, guid: 458cc299504643742b60f057630c63b5, type: 3}
-  m_PrefabInstance: {fileID: 3936624346139758160}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &8536501496903382672 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4671934987611977920, guid: 458cc299504643742b60f057630c63b5, type: 3}
-  m_PrefabInstance: {fileID: 3936624346139758160}
-  m_PrefabAsset: {fileID: 0}
+  moveEffect: {fileID: 0}
