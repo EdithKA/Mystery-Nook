@@ -478,7 +478,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2d9231acc1ef0ec43bb8113c89de0c2f, type: 2}
+  - {fileID: 2100000, guid: 2557e3a7d9da9424fb7608ac589b7997, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36320,6 +36320,11 @@ MonoBehaviour:
   crossbow: {fileID: 195628724}
   gun: {fileID: 0}
   knife: {fileID: 0}
+--- !u!1 &1817935751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3919730256539033639, guid: a7e321a8d29a523499886a936082c6c1, type: 3}
+  m_PrefabInstance: {fileID: 5682707258229537476}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1907611155
 GameObject:
   m_ObjectHideFlags: 0
@@ -36663,13 +36668,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3592504358524499859, guid: a7e321a8d29a523499886a936082c6c1, type: 3}
+      propertyPath: textDialog
+      value: 
+      objectReference: {fileID: 1817935751}
+    - target: {fileID: 3919730256539033639, guid: a7e321a8d29a523499886a936082c6c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6089210420370452691, guid: a7e321a8d29a523499886a936082c6c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.26
+      value: -8.59
       objectReference: {fileID: 0}
     - target: {fileID: 6089210420370452691, guid: a7e321a8d29a523499886a936082c6c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.314
+      value: 11.62
       objectReference: {fileID: 0}
     - target: {fileID: 6089210420370452691, guid: a7e321a8d29a523499886a936082c6c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36707,6 +36720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cat
       objectReference: {fileID: 0}
+    - target: {fileID: 8469878155017148096, guid: a7e321a8d29a523499886a936082c6c1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dd84046947c99f346a14ea88663a38a4, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

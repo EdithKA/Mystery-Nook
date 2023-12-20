@@ -6,25 +6,28 @@ public class CatController : MonoBehaviour
 {
     public float speed;
     public bool vertical;
-    public bool isWalking;
+    public bool isWalking = false;
     public float changeTime = 3.0f;
 
     Rigidbody2D rb;
-    float timer;
+    public float timer;
     int direction = 1;
 
     Animator animator;
 
+    public GameObject textDialog;
   
 
 
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        timer = changeTime;
-        animator = GetComponent<Animator>();
+        
 
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        textDialog.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -35,7 +38,7 @@ public class CatController : MonoBehaviour
 
         timer -= Time.deltaTime;
 
-        if (timer < 0)
+        if (timer <= 0)
         {
             isWalking = false;
         }
@@ -54,6 +57,7 @@ public class CatController : MonoBehaviour
         }
         else
         {
+
             Move();
         }
        
@@ -82,10 +86,12 @@ public class CatController : MonoBehaviour
 
     private IEnumerator Talk()
     {
+        textDialog.SetActive(true);
         direction = -direction;
         yield return new WaitForSeconds(5f);
 
         timer = changeTime;
+        textDialog.SetActive(false);
 
     }
 
