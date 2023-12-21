@@ -8,6 +8,7 @@ TagManager:
   - arrow
   - Key
   - Object
+  - HealthCollectible
   layers:
   - Default
   - TransparentFX

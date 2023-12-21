@@ -10,7 +10,7 @@ public class CatController : MonoBehaviour
     public float changeTime = 3.0f;
 
     Rigidbody2D rb;
-    public float timer;
+    float timer;
     int direction = 1;
 
     Animator animator;

@@ -42,6 +42,9 @@ public class PlayerController : MonoBehaviour
     bool hasCrossbow = false;
     int numKeys = 0;
 
+    public ParticleSystem HealthEffect;
+    public ParticleSystem CollectEffect;
+
 
     private void Awake()
     {
@@ -72,7 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             gameManager.changeScene("GameOver");
         }
-        Debug.Log(health);
+     
 
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
@@ -156,6 +159,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if (collision.gameObject.tag == "Enemy")
         {
             ChangeHealth(-1);
@@ -167,12 +171,21 @@ public class PlayerController : MonoBehaviour
                 gameManager.changeScene("End");
             }
         }
-        
+
+        if (collision.gameObject.tag == "HealthCollectible")
+        {
+            ChangeHealth(1);
+            HealthEffect.Play();
+            Destroy(collision.gameObject);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "Crossbow")
+        CollectEffect.Play();
+
+        if (collision.gameObject.name == "Crossbow")
         {
             hasCrossbow = true;
         }
@@ -180,7 +193,9 @@ public class PlayerController : MonoBehaviour
         {
             numKeys += 1;
         }
-       inventoryController.ObjectCollected(collision.gameObject.name);
+       
+
+        inventoryController.ObjectCollected(collision.gameObject.name);
        Destroy(collision.gameObject);
         
     }
