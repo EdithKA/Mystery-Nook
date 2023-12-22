@@ -7,43 +7,42 @@ public class PlayerController : MonoBehaviour
 {
     public static event Action OnPlayerDamaged;
     
-
-
+    //Movement
     public float speed = 3.0f;
+    private Rigidbody2D rigidbody2d;
+    private float horizontal;
+    private float vertical;
+
+    //Health
     public int maxHealth;
-
-    public GameObject arrowPrefab;
-
     private int currentHealth;
-    
+    public int health { get { return currentHealth; } }
+    private HeartsBarController heartsBarController;
+    public ParticleSystem HealthEffect;
+
+
+    //Inventory + Shoot
+    public GameObject arrowPrefab;
+    private GameObject arrowObject;
+    private GameManager gameManager;
+    private InventoryController inventoryController;
+    public AudioClip shootSound;
+    public ParticleSystem CollectEffect;
+    bool hasCrossbow = false;
+    int numKeys = 0;
+
 
     public float timeInvincible = 2.0f;
     private bool isInvincible;
     private float invincibleTimer;
 
-    private Rigidbody2D rigidbody2d;
-    private float horizontal;
-    private float vertical;
-
+    
+    //Animations
     private Animator animator;
     private Vector2 lookDirection = new Vector2(1, 0);
 
-    public AudioClip throwSound;
     public AudioClip hitSound;
-
     private AudioSource audioSource;
-    private GameObject arrowObject;
-
-    public int health { get { return currentHealth; } }
-    private HeartsBarController heartsBarController;
-    private GameManager gameManager;
-    private InventoryController inventoryController;
-
-    bool hasCrossbow = false;
-    int numKeys = 0;
-
-    public ParticleSystem HealthEffect;
-    public ParticleSystem CollectEffect;
 
 
     private void Awake()
@@ -88,9 +87,7 @@ public class PlayerController : MonoBehaviour
             lookDirection.Normalize();
         }
 
-        animator.SetFloat("Look X", lookDirection.x);
-        animator.SetFloat("Look Y", lookDirection.y);
-        animator.SetFloat("Speed", move.magnitude);
+        
 
         if (isInvincible)
         {
@@ -102,8 +99,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G) && hasCrossbow)
         {
             Shoot();
+            speed = 0;
         }
 
+        animator.SetFloat("Look X", lookDirection.x);
+        animator.SetFloat("Look Y", lookDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
         OnPlayerDamaged?.Invoke();
         
 
@@ -149,7 +150,7 @@ public class PlayerController : MonoBehaviour
         arrow.Shoot(lookDirection, 300);
 
         animator.SetTrigger("Shoot");
-        PlaySound(throwSound);
+        PlaySound(shootSound);
     }
 
     public void PlaySound(AudioClip clip)
