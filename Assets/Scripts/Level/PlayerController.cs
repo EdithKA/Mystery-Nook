@@ -180,6 +180,28 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
+        
+
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("post") && Input.GetKeyDown(KeyCode.E))
+        {
+            string text = collision.gameObject.name;
+
+            if (gameManager.sign.activeSelf) 
+            {
+               
+                gameManager.ViewSign(false);
+            }
+            else
+            {
+                
+                gameManager.SetSignText(text);
+                gameManager.ViewSign(true);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

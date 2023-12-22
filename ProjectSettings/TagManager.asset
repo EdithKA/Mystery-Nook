@@ -9,6 +9,7 @@ TagManager:
   - Key
   - Object
   - HealthCollectible
+  - post
   layers:
   - Default
   - TransparentFX
