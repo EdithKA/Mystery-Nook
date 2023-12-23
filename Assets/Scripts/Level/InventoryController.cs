@@ -6,14 +6,13 @@ using UnityEngine.UIElements;
 public class InventoryController : MonoBehaviour
 {
 
-    public GameObject Key1, Key2, crossbow, gun, knife;
+    public GameObject Key1, Key2, crossbow, knife;
     // Start is called before the first frame update
     void Start()
     {
         Key1.SetActive(false);
         Key2.SetActive(false);
         crossbow.SetActive(false);
-        gun.SetActive(false);
         knife.SetActive(false);
     }
 
@@ -37,6 +36,11 @@ public class InventoryController : MonoBehaviour
         if (objectName == "Crossbow")
         {
             crossbow.SetActive(true);
+
+        }
+        if (objectName == "Knife")
+        {
+            knife.SetActive(true);
 
         }
     }

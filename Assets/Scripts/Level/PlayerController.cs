@@ -1,70 +1,72 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public static event Action OnPlayerDamaged;
-    
-    //Movement
+
+    // Movement
     public float speed = 3.0f;
     private Rigidbody2D rigidbody2d;
     private float horizontal;
     private float vertical;
 
-    //Health
+    // Health
     public int maxHealth;
     private int currentHealth;
     public int health { get { return currentHealth; } }
     private HeartsBarController heartsBarController;
     public ParticleSystem HealthEffect;
 
-
-    //Inventory + Shoot
+    // Inventory + Shoot
     public GameObject arrowPrefab;
     private GameObject arrowObject;
     private GameManager gameManager;
     private InventoryController inventoryController;
     public AudioClip shootSound;
     public ParticleSystem CollectEffect;
+
+
+    List<String> Inventory = new List<String>();
+
     bool hasCrossbow = false;
     int numKeys = 0;
 
+    bool isAttacking = false;
+    bool isWalking = false;
 
     public float timeInvincible = 2.0f;
     private bool isInvincible;
     private float invincibleTimer;
 
-    
-    //Animations
+    // Animations
     private Animator animator;
     private Vector2 lookDirection = new Vector2(1, 0);
 
     public AudioClip hitSound;
     private AudioSource audioSource;
 
-
     private void Awake()
     {
         currentHealth = maxHealth;
-       
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(hasCrossbow);
         gameManager = FindAnyObjectByType<GameManager>();
         heartsBarController = FindObjectOfType<HeartsBarController>();
 
-        
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
 
         inventoryController = FindObjectOfType<InventoryController>();
-        
-        
     }
 
     // Update is called once per frame
@@ -74,20 +76,28 @@ public class PlayerController : MonoBehaviour
         {
             gameManager.changeScene("GameOver");
         }
-     
 
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+        Vector2 move = Vector2.zero;
 
-        Vector2 move = new Vector2(horizontal, vertical);
-
-        if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+        if (!isAttacking)
         {
-            lookDirection.Set(move.x, move.y);
-            lookDirection.Normalize();
-        }
+            horizontal = Input.GetAxis("Horizontal");
+            vertical = Input.GetAxis("Vertical");
 
-        
+            move = new Vector2(horizontal, vertical);
+
+            if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+            {
+                lookDirection.Set(move.x, move.y);
+                lookDirection.Normalize();
+
+                isWalking = true;
+            }
+            else
+            {
+                isWalking = false;
+            }
+        }
 
         if (isInvincible)
         {
@@ -96,20 +106,37 @@ public class PlayerController : MonoBehaviour
                 isInvincible = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.G) && hasCrossbow)
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            Shoot();
-            speed = 0;
+            if (Inventory.Contains("Crossbow"))
+            {
+                StartCoroutine(Attack("Crossbow"));
+            }
+            else
+            {
+                StartCoroutine(ViewHelpText("NoCrossbow"));
+                
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if (Inventory.Contains("Knife"))
+            {
+                StartCoroutine(Attack("Knife"));
+            }
+            else
+            {
+                StartCoroutine(ViewHelpText("NoKnife"));
+            }
         }
 
+        animator.SetBool("IsWalking", isWalking);
         animator.SetFloat("Look X", lookDirection.x);
         animator.SetFloat("Look Y", lookDirection.y);
         animator.SetFloat("Speed", move.magnitude);
         OnPlayerDamaged?.Invoke();
-        
 
-        
-        
+       
     }
 
     void FixedUpdate()
@@ -134,24 +161,36 @@ public class PlayerController : MonoBehaviour
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-
-        // Llama a DrawHearts cada vez que cambia la salud
         heartsBarController.DrawHearts();
-
-        
     }
 
-
-    void Shoot()
+    private IEnumerator Attack(string weapon)
     {
-        arrowObject = Instantiate(arrowPrefab, rigidbody2d.position + Vector2.up * 0.01f, Quaternion.identity);
-        Arrow arrow = arrowObject.GetComponent<Arrow>();
-        arrow.shootDirection = lookDirection;
-        arrow.Shoot(lookDirection, 300);
+        isWalking = false;
+        isAttacking = true;
+        speed = 0;
 
-        animator.SetTrigger("Shoot");
-        PlaySound(shootSound);
+        if (weapon == "Crossbow")
+        {
+            arrowObject = Instantiate(arrowPrefab, rigidbody2d.position + Vector2.up * 0.01f, Quaternion.identity);
+            Arrow arrow = arrowObject.GetComponent<Arrow>();
+            arrow.shootDirection = lookDirection;
+            arrow.Shoot(lookDirection, 300);
+
+            animator.SetTrigger("Shoot");
+            PlaySound(shootSound);
+        }
+        else if (weapon == "Knife")
+        {
+            animator.SetTrigger("Stab");
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
+        isAttacking = false;
+        speed = 3.0f;
     }
+
 
     public void PlaySound(AudioClip clip)
     {
@@ -160,14 +199,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
         if (collision.gameObject.tag == "Enemy")
         {
             ChangeHealth(-1);
         }
-        if(collision.gameObject.name == "House")
+        if (collision.gameObject.name == "House")
         {
-            if(numKeys == 2)
+            if (numKeys == 2)
             {
                 gameManager.changeScene("End");
             }
@@ -179,47 +217,47 @@ public class PlayerController : MonoBehaviour
             HealthEffect.Play();
             Destroy(collision.gameObject);
         }
-
-        
-
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("post") && Input.GetKeyDown(KeyCode.E))
+        if (collision.gameObject.tag == "post")
         {
-            string text = collision.gameObject.name;
-
-            if (gameManager.sign.activeSelf) 
-            {
-               
-                gameManager.ViewSign(false);
-            }
-            else
-            {
-                
-                gameManager.SetSignText(text);
-                gameManager.ViewSign(true);
-            }
+            ViewHelpText("Post");
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         CollectEffect.Play();
+        string objectCollected = collision.gameObject.name;
 
-        if (collision.gameObject.name == "Crossbow")
+        switch (objectCollected)
         {
-            hasCrossbow = true;
+            case "Crossbow":
+                Inventory.Add("Crossbow");
+                break;
+            case "Knife":
+                Inventory.Add("Knife");
+                break;
+            case "Key":
+                numKeys += 1;
+                break;
+            default:
+                break;
         }
-        if(collision.gameObject.tag  == "Key")
-        {
-            numKeys += 1;
-        }
-       
 
-        inventoryController.ObjectCollected(collision.gameObject.name);
-       Destroy(collision.gameObject);
-        
+        inventoryController.ObjectCollected(objectCollected);
+        Destroy(collision.gameObject);
+    }
+
+
+    private IEnumerator ViewHelpText(string helpCase)
+    {
+        gameManager.setHelpText(helpCase);
+
+        yield return new WaitForSeconds(1f);
+
+        gameManager.setHelpText("Default");
     }
 }

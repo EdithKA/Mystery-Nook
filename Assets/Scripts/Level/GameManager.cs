@@ -10,13 +10,16 @@ public class GameManager : MonoBehaviour
     public Text signText;
     public GameObject sign;
 
+    
+    public Text helpText;
+
     // Start is called before the first frame update
     void Start()
     {
         sign.SetActive(false);
     }
 
-    // Update is called once per frame
+   
     public void ViewSign(bool visible)
     {
         sign.SetActive(visible);
@@ -35,7 +38,7 @@ public class GameManager : MonoBehaviour
                 signText.text = "Shelter";
                 break;
             case "Key1Sign":
-                signText.text = "Key1";
+                signText.text = "The first key is after passing the bridge.";
                 break;
             case "Key2Sign":
                 signText.text = "Key2";
@@ -46,9 +49,28 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void setHelpText(string text)
+    {
+        switch (text)
+        {
+            case "NoCrossbow":
+                helpText.text = "You don't have a crossbow";
+                break;
+            case "Post":
+                helpText.text = "Press E to read";
+                break;
+            case "Key2Sign":
+                helpText.text = "Key2";
+                break;
+            default:
+                helpText.text = "";
+                break;
+        }
+    }
 
 
-    
+
+
 
 
 }

@@ -65,7 +65,7 @@ public class MushroomController : MonoBehaviour
 
     private void Move()
     {
-        Debug.Log(direction);
+        //Debug.Log(direction);
         Vector2 position = rb.position;
         position.x = position.x + Time.deltaTime * speed * direction;
         animator.SetFloat("moveX", direction); // 1 para moverse hacia la derecha
