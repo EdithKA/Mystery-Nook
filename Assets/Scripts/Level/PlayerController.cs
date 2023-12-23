@@ -217,13 +217,19 @@ public class PlayerController : MonoBehaviour
             HealthEffect.Play();
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "post")
+        {
+            gameManager.SetSignText(collision.gameObject.name);
+            gameManager.ViewSign();
+            StartCoroutine(ViewHelpText("Post"));
+        }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "post")
         {
-            ViewHelpText("Post");
+            gameManager.ViewSign();
         }
     }
 

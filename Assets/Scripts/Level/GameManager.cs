@@ -20,9 +20,17 @@ public class GameManager : MonoBehaviour
     }
 
    
-    public void ViewSign(bool visible)
+    public void ViewSign()
     {
-        sign.SetActive(visible);
+        if(sign.activeSelf)
+        {
+            sign.SetActive(false);
+        }
+        else
+        {
+            sign.SetActive(true);
+        }
+        
     }
 
     public void changeScene(string scene)
