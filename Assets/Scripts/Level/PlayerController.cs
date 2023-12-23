@@ -203,7 +203,7 @@ public class PlayerController : MonoBehaviour
         {
             ChangeHealth(-1);
         }
-        if (collision.gameObject.name == "House")
+        if (collision.gameObject.name == "Shelter")
         {
             if (numKeys == 2)
             {
@@ -229,7 +229,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        CollectEffect.Play();
+        
         string objectCollected = collision.gameObject.name;
 
         switch (objectCollected)
@@ -248,7 +248,10 @@ public class PlayerController : MonoBehaviour
         }
 
         inventoryController.ObjectCollected(objectCollected);
-        Destroy(collision.gameObject);
+        if (collision.gameObject.tag == "Object" || collision.gameObject.tag == "HealthCollectible") { 
+            Destroy(collision.gameObject);
+            CollectEffect.Play();
+        }
     }
 
 

@@ -126,12 +126,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   maxHealth: 100
-  arrowPrefab: {fileID: 6709994780551522278, guid: f3a95b0c7caa86d498c894d5f2bd9dc4, type: 3}
-  timeInvincible: 2
-  throwSound: {fileID: 8300000, guid: acfa0b86581d68344a8ee45e459ce125, type: 3}
-  hitSound: {fileID: 8300000, guid: 467d5cdd3aae2a747a895eda4bb99535, type: 3}
   HealthEffect: {fileID: 7115374068583065926}
+  arrowPrefab: {fileID: 6709994780551522278, guid: f3a95b0c7caa86d498c894d5f2bd9dc4, type: 3}
+  shootSound: {fileID: 0}
   CollectEffect: {fileID: 6559435832919045708}
+  timeInvincible: 2
+  hitSound: {fileID: 8300000, guid: 467d5cdd3aae2a747a895eda4bb99535, type: 3}
 --- !u!50 &7551626819917810174
 Rigidbody2D:
   serializedVersion: 4
@@ -287,10 +287,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0010777712, y: -0.27694255}
+  m_Offset: {x: -0.0010777712, y: 0.20515388}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 0.6, y: 1.08}
     newSize: {x: 0.5, y: 0.9}
     adaptiveTilingThreshold: 0.5
@@ -298,7 +298,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.60561204, y: 0.46555054}
+  m_Size: {x: 0.60561204, y: 0.39392483}
   m_EdgeRadius: 0
 --- !u!1001 &3973481831135362845
 PrefabInstance:

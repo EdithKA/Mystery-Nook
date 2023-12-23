@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 009c54a216baee144887bf74acd8618e
+guid: a2f14b1c1a31c3f4ebad71012f10732e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,6 +69,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -106,30 +119,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Crossbow_0
+      name: AppleTree_allSeasons_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 96
-        width: 15
-        height: 27
+        x: 13
+        y: 258
+        width: 81
+        height: 118
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c187b0352937744b936a39cb06d5ba
-      internalID: -207033726
+      spriteID: 0c3dc3644194d14409f45c9f835d7919
+      internalID: -2142946948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_1
+      name: AppleTree_allSeasons_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 96
-        width: 15
-        height: 27
+        x: 110
+        y: 257
+        width: 73
+        height: 112
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a7fa226534f3f540a576f04725e5420
-      internalID: 1572621817
+      spriteID: 9f6f3fa56b332084ca3e442fd3104e55
+      internalID: -730442974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_11
+      name: AppleTree_allSeasons_2
       rect:
         serializedVersion: 2
-        x: 9
-        y: 64
-        width: 15
-        height: 27
+        x: 198
+        y: 257
+        width: 88
+        height: 117
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61108a86c698f774987ac855bf648435
-      internalID: -2067690980
+      spriteID: c7a6c3635aa52d0408bfc04c2eaf6ef6
+      internalID: 1028818611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_12
+      name: AppleTree_allSeasons_3
       rect:
         serializedVersion: 2
-        x: 41
-        y: 64
-        width: 15
-        height: 27
+        x: 293
+        y: 257
+        width: 89
+        height: 117
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e758fd2f24810af4d96c8f9d1c0e7fc2
-      internalID: 2017587956
+      spriteID: 36b86071b9447414daf8db378244ace7
+      internalID: -1868662939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_13
+      name: AppleTree_allSeasons_4
       rect:
         serializedVersion: 2
-        x: 73
-        y: 64
-        width: 15
-        height: 27
+        x: 389
+        y: 257
+        width: 89
+        height: 117
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da0afad88cb8f1c43b0c8dd46b610ff6
-      internalID: 1048566544
+      spriteID: 9646f89a1f4382849ba6a3061530aaf0
+      internalID: 1758571352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_2
+      name: AppleTree_allSeasons_5
       rect:
         serializedVersion: 2
-        x: 73
-        y: 96
-        width: 15
-        height: 27
+        x: 13
+        y: 174
+        width: 69
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03dca7403bc197649834de1f5339b0dd
-      internalID: 1881212963
+      spriteID: a6aa9e96e9b025649b340fe2f8d94385
+      internalID: -2022773506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_21
+      name: AppleTree_allSeasons_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 32
-        width: 18
-        height: 27
+        x: 21
+        y: 224
+        width: 25
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99473ab3984c1da40969c5f1f55833aa
-      internalID: -1559044605
+      spriteID: 75f66240685c4644ba6664febe41b394
+      internalID: 1571550929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_22
+      name: AppleTree_allSeasons_7
       rect:
         serializedVersion: 2
-        x: 40
-        y: 32
-        width: 17
-        height: 27
+        x: 127
+        y: 234
+        width: 10
+        height: 7
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54e45fc462cbc82418c9c48420d5ff9c
-      internalID: 1773340080
+      spriteID: c9f304e7048c8514a9cc23e26ec30f78
+      internalID: 2085273608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_23
+      name: AppleTree_allSeasons_8
       rect:
         serializedVersion: 2
-        x: 72
-        y: 32
-        width: 17
-        height: 27
+        x: 152
+        y: 232
+        width: 4
+        height: 4
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d42014048f12c70428215e482e4c045b
-      internalID: -1418352207
+      spriteID: 146df9fc1cabd7149be3ad09418db025
+      internalID: -691116683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_3
+      name: AppleTree_allSeasons_9
       rect:
         serializedVersion: 2
-        x: 105
-        y: 96
-        width: 15
-        height: 27
+        x: 199
+        y: 166
+        width: 88
+        height: 80
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d7bbf444d9f5064a84cca050d1c5ee3
-      internalID: 1517772643
+      spriteID: 3298c1eba7084134cba57c0059e9d711
+      internalID: -1480934668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_31
+      name: AppleTree_allSeasons_10
       rect:
         serializedVersion: 2
-        x: 6
-        y: 0
-        width: 19
-        height: 27
+        x: 294
+        y: 165
+        width: 88
+        height: 80
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e63c0bccde3ca974199bde0b48422e68
-      internalID: -280739630
+      spriteID: 8d5dcc7f0d434fc44be7a7d9e6d3a8d6
+      internalID: 1159374818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_32
+      name: AppleTree_allSeasons_11
       rect:
         serializedVersion: 2
-        x: 38
-        y: 0
-        width: 19
-        height: 27
+        x: 390
+        y: 165
+        width: 88
+        height: 80
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 020ede31320915947b7001fe1323dcb7
-      internalID: -241827743
+      spriteID: 221883ef1e01cd345ae7691693676cec
+      internalID: 1692996171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_4
+      name: AppleTree_allSeasons_12
       rect:
         serializedVersion: 2
-        x: 137
-        y: 96
-        width: 15
-        height: 27
+        x: 152
+        y: 221
+        width: 10
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,146 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c8c9b53a2815204b912c355964ecd3c
-      internalID: 198088705
+      spriteID: 9e6210634f2b7b94e97303eea6eb35fb
+      internalID: -2136234371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_5
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 96
-        width: 15
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09684eee2513d174a8339468d73f6cef
-      internalID: 1324349485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crossbow_14
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 64
-        width: 15
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89bccddf39c59a845a76355f5e750c92
-      internalID: 580873575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crossbow_15
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 64
-        width: 15
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43546b779b991a14c9da290f611d9f41
-      internalID: -1511583561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crossbow_16
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 64
-        width: 15
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d01e27204b34a76458964f341af0b071
-      internalID: -2005510803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crossbow_24
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 32
-        width: 17
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3204711b74050fd47b7cf1dcc8bc7dc1
-      internalID: -198362625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crossbow_25
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 32
-        width: 17
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a424b5403a083744b5ba369aed3249f
-      internalID: -1068077057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crossbow_26
+      name: AppleTree_allSeasons_13
       rect:
         serializedVersion: 2
         x: 168
-        y: 32
-        width: 18
-        height: 27
+        y: 218
+        width: 7
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,20 +410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5946b851636d57f4eb0f202629445759
-      internalID: 1839818259
+      spriteID: fa04cf71187a5de48a862e0f33511676
+      internalID: -2036126055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_33
+      name: AppleTree_allSeasons_14
       rect:
         serializedVersion: 2
-        x: 70
-        y: 0
-        width: 19
-        height: 27
+        x: 111
+        y: 197
+        width: 10
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,41 +431,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d8607c7670ff68429f87d576dbb8b3c
-      internalID: 580021284
+      spriteID: 15e9aa0f684621a42b8807120afebfec
+      internalID: 1747077801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_34
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 0
-        width: 19
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa04117282375984d94f13bde70ffc9c
-      internalID: -1983194668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crossbow_35
+      name: AppleTree_allSeasons_15
       rect:
         serializedVersion: 2
         x: 134
-        y: 0
-        width: 19
-        height: 27
+        y: 191
+        width: 13
+        height: 14
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,20 +452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a48d54e48586cb40bf1fbbc4a06a594
-      internalID: 2113564090
+      spriteID: 88f7e4e53e62e9f4eb490995d201111e
+      internalID: -194625968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crossbow_36
+      name: AppleTree_allSeasons_16
       rect:
         serializedVersion: 2
-        x: 166
-        y: 0
-        width: 19
-        height: 27
+        x: 137
+        y: 204
+        width: 20
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,8 +473,344 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36a20e5947659f249ae0ac0c2181537d
-      internalID: -1637212556
+      spriteID: c16c32f8af73cac4aac3772a3ece67b5
+      internalID: 542402119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_17
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 203
+        width: 15
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d2c4211d5fd8c44bcb077eb5f47f46
+      internalID: -1208951582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_18
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 171
+        width: 49
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3379af99b55f6a4ab98483acc872221
+      internalID: 1465109268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_19
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 176
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efdb7ecd2300c2489d0836228e9f4fe
+      internalID: -1096416921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_20
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 182
+        width: 8
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8eeac028d8c35d449e165b306c43899
+      internalID: -279443595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_21
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 189
+        width: 12
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e5f05fca0a69d4799603b101b7db47
+      internalID: -1710080447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_22
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 189
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b778651426f8d542adbcb2ccfb07913
+      internalID: -140655667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 181
+        width: 6
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fa6587627f60c41affe88e3567db75
+      internalID: -1680237069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_24
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 160
+        width: 13
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fde22af75fbd14e978c009b413200c
+      internalID: -964825675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_25
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 158
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76260cb804f99f94f821004c2784c6ad
+      internalID: 2140870018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_26
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3
+        width: 73
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820147d97516b1c49a880c810a56b4c1
+      internalID: 880331794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_27
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 12
+        width: 69
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e030c9a36658eb34996b56508dccaf2d
+      internalID: -3758547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_28
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 5
+        width: 55
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162620c6e8b3d7e4196f4b74a0b88809
+      internalID: -1490483564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_29
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 46
+        width: 13
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa2251d042e0484ea4a930ea124c7fd
+      internalID: 678945830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_30
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 5
+        width: 55
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6e397c65317954f81fb8022babdc4a
+      internalID: 237610727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_31
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 46
+        width: 13
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1584216ba35e808499415cd046b0543e
+      internalID: 2121039518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AppleTree_allSeasons_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2
+        width: 95
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d601312e9214cac40a67d387336b8f15
+      internalID: 393364787
       vertices: []
       indices: 
       edges: []
@@ -637,46 +826,39 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Crossbow_0: -207033726
-      Crossbow_1: 1572621817
-      Crossbow_10: -387818236
-      Crossbow_11: -2067690980
-      Crossbow_12: 2017587956
-      Crossbow_13: 1048566544
-      Crossbow_14: -1672652194
-      Crossbow_15: -1555084299
-      Crossbow_16: 825290330
-      Crossbow_17: 422867782
-      Crossbow_18: 669110287
-      Crossbow_19: -537234396
-      Crossbow_2: 1881212963
-      Crossbow_20: 1256726676
-      Crossbow_21: -1559044605
-      Crossbow_22: 1773340080
-      Crossbow_23: -1418352207
-      Crossbow_24: -1042237773
-      Crossbow_25: 425473252
-      Crossbow_26: 459152244
-      Crossbow_27: -1293059900
-      Crossbow_28: -698300508
-      Crossbow_29: -1089857508
-      Crossbow_3: 1517772643
-      Crossbow_30: -198362625
-      Crossbow_31: -280739630
-      Crossbow_32: -241827743
-      Crossbow_33: 406595004
-      Crossbow_34: -49294175
-      Crossbow_35: -1747183436
-      Crossbow_36: -117918662
-      Crossbow_37: -2046905632
-      Crossbow_38: -427578441
-      Crossbow_39: 580021284
-      Crossbow_4: 198088705
-      Crossbow_5: 1324349485
-      Crossbow_6: 1867482500
-      Crossbow_7: 1978683570
-      Crossbow_8: 349063296
-      Crossbow_9: 2020422948
+      AppleTree_allSeasons_0: -2142946948
+      AppleTree_allSeasons_1: -730442974
+      AppleTree_allSeasons_10: 1159374818
+      AppleTree_allSeasons_11: 1692996171
+      AppleTree_allSeasons_12: -2136234371
+      AppleTree_allSeasons_13: -2036126055
+      AppleTree_allSeasons_14: 1747077801
+      AppleTree_allSeasons_15: -194625968
+      AppleTree_allSeasons_16: 542402119
+      AppleTree_allSeasons_17: -1208951582
+      AppleTree_allSeasons_18: 1465109268
+      AppleTree_allSeasons_19: -1096416921
+      AppleTree_allSeasons_2: 1028818611
+      AppleTree_allSeasons_20: -279443595
+      AppleTree_allSeasons_21: -1710080447
+      AppleTree_allSeasons_22: -140655667
+      AppleTree_allSeasons_23: -1680237069
+      AppleTree_allSeasons_24: -964825675
+      AppleTree_allSeasons_25: 2140870018
+      AppleTree_allSeasons_26: 880331794
+      AppleTree_allSeasons_27: -3758547
+      AppleTree_allSeasons_28: -1490483564
+      AppleTree_allSeasons_29: 678945830
+      AppleTree_allSeasons_3: -1868662939
+      AppleTree_allSeasons_30: 237610727
+      AppleTree_allSeasons_31: 2121039518
+      AppleTree_allSeasons_32: 393364787
+      AppleTree_allSeasons_4: 1758571352
+      AppleTree_allSeasons_5: -2022773506
+      AppleTree_allSeasons_6: 1571550929
+      AppleTree_allSeasons_7: 2085273608
+      AppleTree_allSeasons_8: -691116683
+      AppleTree_allSeasons_9: -1480934668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
