@@ -90,7 +90,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &608072366667213464
 Animator:
   serializedVersion: 5
@@ -334,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279291750802979340, guid: 0d8b1ddcf3356504a9c6405136697f04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.506
       objectReference: {fileID: 0}
     - target: {fileID: 6279291750802979340, guid: 0d8b1ddcf3356504a9c6405136697f04, type: 3}
       propertyPath: m_LocalPosition.z
@@ -417,7 +417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5327791039600402661, guid: 17a018d52517db741bed901248320ef8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.521
       objectReference: {fileID: 0}
     - target: {fileID: 5327791039600402661, guid: 17a018d52517db741bed901248320ef8, type: 3}
       propertyPath: m_LocalPosition.z

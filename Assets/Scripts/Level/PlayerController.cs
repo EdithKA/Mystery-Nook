@@ -106,6 +106,13 @@ public class PlayerController : MonoBehaviour
                 isInvincible = false;
         }
 
+        animator.SetBool("IsWalking", isWalking);
+        animator.SetFloat("Look X", lookDirection.x);
+        animator.SetFloat("Look Y", lookDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
+        OnPlayerDamaged?.Invoke();
+
+
         if (Input.GetKeyDown(KeyCode.G))
         {
             if (Inventory.Contains("Crossbow"))
@@ -130,12 +137,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        animator.SetBool("IsWalking", isWalking);
-        animator.SetFloat("Look X", lookDirection.x);
-        animator.SetFloat("Look Y", lookDirection.y);
-        animator.SetFloat("Speed", move.magnitude);
-        OnPlayerDamaged?.Invoke();
-
+       
        
     }
 
@@ -146,6 +148,16 @@ public class PlayerController : MonoBehaviour
         position.y = position.y + speed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+        if (isInvincible)
+        {
+            // Manejar el parpadeo durante el período de invulnerabilidad
+            GetComponent<SpriteRenderer>().enabled = !GetComponent<SpriteRenderer>().enabled;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().enabled = true; // Asegurar que el sprite sea visible cuando no es invulnerable
+        }
+
     }
 
     public void ChangeHealth(int amount)
@@ -170,9 +182,11 @@ public class PlayerController : MonoBehaviour
         isAttacking = true;
         speed = 0;
 
+        Vector2 arrowSpawnPosition = rigidbody2d.position + Vector2.up * 0.5f; // Ajusta la posición en el eje Y
+
         if (weapon == "Crossbow")
         {
-            arrowObject = Instantiate(arrowPrefab, rigidbody2d.position + Vector2.up * 0.01f, Quaternion.identity);
+            arrowObject = Instantiate(arrowPrefab, arrowSpawnPosition, Quaternion.identity);
             Arrow arrow = arrowObject.GetComponent<Arrow>();
             arrow.shootDirection = lookDirection;
             arrow.Shoot(lookDirection, 300);
@@ -190,6 +204,7 @@ public class PlayerController : MonoBehaviour
         isAttacking = false;
         speed = 3.0f;
     }
+
 
 
     public void PlaySound(AudioClip clip)
@@ -221,7 +236,7 @@ public class PlayerController : MonoBehaviour
         {
             gameManager.SetSignText(collision.gameObject.name);
             gameManager.ViewSign();
-            StartCoroutine(ViewHelpText("Post"));
+            
         }
     }
 
@@ -253,6 +268,7 @@ public class PlayerController : MonoBehaviour
                 break;
         }
 
+        StartCoroutine(ViewHelpText(objectCollected));
         inventoryController.ObjectCollected(objectCollected);
         if (collision.gameObject.tag == "Object" || collision.gameObject.tag == "HealthCollectible") { 
             Destroy(collision.gameObject);

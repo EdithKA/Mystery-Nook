@@ -49,10 +49,10 @@ public class GameManager : MonoBehaviour
                 signText.text = "The first key is after passing the bridge.";
                 break;
             case "Key2Sign":
-                signText.text = "Key2";
+                signText.text = "There's a key lost in the forest";
                 break;
             default:
-                signText.text = "Unknown Text";
+                signText.text = "";
                 break;
         }
     }
@@ -64,11 +64,17 @@ public class GameManager : MonoBehaviour
             case "NoCrossbow":
                 helpText.text = "You don't have a crossbow";
                 break;
-            case "Post":
-                helpText.text = "Press E to read";
+            case "NoKnife":
+                helpText.text = "You don't have a knife";
                 break;
-            case "Key2Sign":
-                helpText.text = "Key2";
+            case "Key":
+                helpText.text = "Key collected";
+                break;
+            case "Knife":
+                helpText.text = "Knife collected";
+                break;
+            case "Crossbow":
+                helpText.text = "Crossbow collected";
                 break;
             default:
                 helpText.text = "";
