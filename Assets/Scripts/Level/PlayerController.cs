@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            gameManager.changeScene("GameOver");
+            StartCoroutine(Death());
         }
 
         Vector2 move = Vector2.zero;
@@ -268,5 +268,14 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         gameManager.setHelpText("Default");
+    }
+
+    private IEnumerator Death()
+    {
+        animator.SetTrigger("Death");
+
+        yield return new WaitForSeconds(2.5f);
+
+        gameManager.changeScene("GameOver");
     }
 }
