@@ -128,10 +128,11 @@ MonoBehaviour:
   maxHealth: 100
   HealthEffect: {fileID: 7115374068583065926}
   arrowPrefab: {fileID: 6709994780551522278, guid: f3a95b0c7caa86d498c894d5f2bd9dc4, type: 3}
-  shootSound: {fileID: 0}
   CollectEffect: {fileID: 6559435832919045708}
   timeInvincible: 2
-  hitSound: {fileID: 8300000, guid: 467d5cdd3aae2a747a895eda4bb99535, type: 3}
+  damageSound: {fileID: 8300000, guid: 9310df66011c7994aa74f5fdbe02474b, type: 3}
+  shootSound: {fileID: 8300000, guid: acfa0b86581d68344a8ee45e459ce125, type: 3}
+  stabSound: {fileID: 8300000, guid: 468a51716a3738c4f8528c54ee1c11d2, type: 3}
 --- !u!50 &7551626819917810174
 Rigidbody2D:
   serializedVersion: 4

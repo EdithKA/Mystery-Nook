@@ -270,7 +270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  health: 10
   maxHealth: 10
   healthBar: {fileID: 3526113079522984696}
   changeTime: 3

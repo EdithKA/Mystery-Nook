@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour
     private GameObject arrowObject;
     private GameManager gameManager;
     private InventoryController inventoryController;
-    public AudioClip shootSound;
     public ParticleSystem CollectEffect;
 
 
@@ -48,7 +47,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Vector2 lookDirection = new Vector2(1, 0);
 
-    public AudioClip hitSound;
+    public AudioClip damageSound, shootSound, stabSound;
     private AudioSource audioSource;
 
     private void Awake()
@@ -173,7 +172,7 @@ public class PlayerController : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-            PlaySound(hitSound);
+            PlaySound(damageSound);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
@@ -202,6 +201,7 @@ public class PlayerController : MonoBehaviour
         else if (weapon == "Knife")
         {
             animator.SetTrigger("Stab");
+            PlaySound(stabSound);
         }
 
         yield return new WaitForSeconds(0.2f);
@@ -225,10 +225,10 @@ public class PlayerController : MonoBehaviour
             switch(collisionObject.tag)
             {
                 case "Bear":
-                    collisionObject.GetComponent<FreddyController>().ChangeHealth(-2);
+                    
                     break;
                 case "Snake":
-                    Destroy(collisionObject);
+                    collisionObject.GetComponent<SnakeController>().ChangeHealth(-3);
                     break;
 
             }

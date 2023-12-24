@@ -1087,6 +1087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snake (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3435217575297391042, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalPosition.x
       value: 56.792744
@@ -1125,6 +1129,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672330952367622452, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -37122,6 +37138,10 @@ PrefabInstance:
       propertyPath: UVModule.frameOverTime.maxCurve.m_Curve.Array.data[1].tangentMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3435217575297391042, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.667507
@@ -37165,6 +37185,18 @@ PrefabInstance:
     - target: {fileID: 5222668639701946093, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672330952367622452, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -37390,6 +37422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snake (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3435217575297391042, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.456009
@@ -37428,6 +37464,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672330952367622452, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -37783,6 +37831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snake (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3435217575297391042, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.713692
@@ -37821,6 +37873,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672330952367622452, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -39348,6 +39412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snake (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3435217575297391042, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.59486
@@ -39386,6 +39454,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672330952367622452, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -40119,6 +40199,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snake (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3435217575297391042, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.430296
@@ -40157,6 +40241,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672330952367622452, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -41274,12 +41370,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040762510}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d97be12a136a71d458a575c9616ce092, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.036
+  m_Volume: 0.714
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -41851,6 +41947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snake
       objectReference: {fileID: 0}
+    - target: {fileID: 3435217575297391042, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3632856185435016187, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.9701
@@ -41905,6 +42005,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8017471092829051833, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
       propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672330952367622452, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885355648913928611, guid: 1fda19c788eb14b43a6e23d1acffb239, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

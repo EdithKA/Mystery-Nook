@@ -5,10 +5,11 @@ using UnityEngine;
 public class FreddyController : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField] float health, maxHealth;
+    [SerializeField]  float maxHealth;
     [SerializeField] HealthBarController healthBar;
-    public float changeTime = 3.0f;
 
+    public float changeTime = 3.0f;
+    float currentHealth;
     private Rigidbody2D rb;
     private float timer;
     private int currentDirection = 0; // 0: Derecha, 1: Abajo, 2: Izquierda, 3: Arriba
@@ -26,13 +27,14 @@ public class FreddyController : MonoBehaviour
 
     void Start()
     {
-        
+        currentHealth = maxHealth;
+
     }
 
     void Update()
     {
-        healthBar.UpdateHealthBar(health, maxHealth);
-        if (health == 0)
+        healthBar.UpdateHealthBar(currentHealth, maxHealth);
+        if (currentHealth <= 0)
         {
             Destroy(this.gameObject);
         }
@@ -106,8 +108,8 @@ public class FreddyController : MonoBehaviour
     public void ChangeHealth(int amount)
     {
         
-        health += amount;
+        currentHealth += amount;
         
-        Debug.Log(health);
+        Debug.Log(currentHealth);
     }
 }

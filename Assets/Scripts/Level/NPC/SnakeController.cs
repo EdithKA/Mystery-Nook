@@ -5,9 +5,11 @@ using UnityEngine;
 public class SnakeController : MonoBehaviour
 {
 
-    public float speed;
+    [SerializeField] float maxHealth, speed, changeTime;
+    [SerializeField] HealthBarController healthBar;
+
     public bool vertical;
-    public float changeTime = 3.0f;
+    float currentHealth;
 
     Rigidbody2D rb;
     float timer;
@@ -16,19 +18,27 @@ public class SnakeController : MonoBehaviour
     Animator animator;
 
 
-
-
-    void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+        healthBar = GetComponentInChildren<HealthBarController>();
+    }
+    void Start()
+    {
+        currentHealth = maxHealth;
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        healthBar.UpdateHealthBar(currentHealth, maxHealth);
+        if ((currentHealth <= 0))
+        {
+            StartCoroutine(Death());
+        }
         timer -= Time.deltaTime;
         
         if(timer < 0)
@@ -75,9 +85,16 @@ public class SnakeController : MonoBehaviour
         
         if(collision.gameObject.tag == "arrow")
         {
-            StartCoroutine(Death());
+            ChangeHealth(-1);
         }
     }
 
+    public void ChangeHealth(int amount)
+    {
+
+        currentHealth += amount;
+
+        
+    }
 
 }
