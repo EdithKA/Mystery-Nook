@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Vector2 lookDirection = new Vector2(1, 0);
 
-    public AudioClip damageSound, shootSound, stabSound;
+    public AudioClip damageSound, shootSound, stabSound, walkSound, collectSound, healEffet;
     private AudioSource audioSource;
 
     private void Awake()
@@ -88,6 +88,10 @@ public class PlayerController : MonoBehaviour
 
             if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
             {
+               if(!audioSource.isPlaying)
+                {
+                    PlaySound(walkSound);
+                }
                 lookDirection.Set(move.x, move.y);
                 lookDirection.Normalize();
 
@@ -167,14 +171,15 @@ public class PlayerController : MonoBehaviour
     {
         if (amount < 0)
         {
+            PlaySound(damageSound);
             if (isInvincible)
                 return;
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-            PlaySound(damageSound);
+            
         }
-
+        
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         heartsBarController.DrawHearts();
     }
@@ -251,9 +256,13 @@ public class PlayerController : MonoBehaviour
                     }
                     break;
                 case "HealthCollectible":
-                    ChangeHealth(1);
-                    HealthEffect.Play();
-                    Destroy(collision.gameObject);
+                    if(currentHealth < maxHealth)
+                    {
+                        ChangeHealth(1);
+                        HealthEffect.Play();
+                        PlaySound(healEffet);
+                        Destroy(collision.gameObject);
+                    }
                     break;
                 case "post":
                     gameManager.SetSignText(collision.gameObject.name);
@@ -300,6 +309,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Object" || collision.gameObject.tag == "HealthCollectible") { 
             Destroy(collision.gameObject);
             CollectEffect.Play();
+            PlaySound(collectSound);
         }
     }
 

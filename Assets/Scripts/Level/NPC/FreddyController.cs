@@ -8,6 +8,7 @@ public class FreddyController : MonoBehaviour
     [SerializeField]  float maxHealth;
     [SerializeField] HealthBarController healthBar;
 
+
     public float changeTime = 3.0f;
     float currentHealth;
     private Rigidbody2D rb;
@@ -17,12 +18,17 @@ public class FreddyController : MonoBehaviour
 
     private Animator animator;
 
+    //Sound
+    AudioSource audioSource;
+    [SerializeField] AudioClip moveSound;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
         healthBar = GetComponentInChildren<HealthBarController>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -80,6 +86,7 @@ public class FreddyController : MonoBehaviour
 
     private void ChangeDirection()
     {
+        StartCoroutine(moveEffect());
         currentDirection = (currentDirection + 1) % 4; // Cambia la dirección en el patrón derecha, abajo, izquierda, arriba
         timer = changeTime;
 
@@ -111,5 +118,15 @@ public class FreddyController : MonoBehaviour
         currentHealth += amount;
         
         Debug.Log(currentHealth);
+    }
+
+    IEnumerator moveEffect()
+    {
+        PlaySound(moveSound);
+        yield return new WaitForSeconds(2);
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }

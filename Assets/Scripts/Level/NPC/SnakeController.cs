@@ -7,6 +7,7 @@ public class SnakeController : MonoBehaviour
 
     [SerializeField] float maxHealth, speed, changeTime;
     [SerializeField] HealthBarController healthBar;
+    
 
     public bool vertical;
     float currentHealth;
@@ -17,6 +18,10 @@ public class SnakeController : MonoBehaviour
 
     Animator animator;
 
+    //Sound
+    AudioSource audioSource;
+    [SerializeField] AudioClip moveSound;
+
 
     private void Awake()
     {
@@ -24,6 +29,7 @@ public class SnakeController : MonoBehaviour
         timer = changeTime;
         animator = GetComponent<Animator>();
         healthBar = GetComponentInChildren<HealthBarController>();
+        audioSource = GetComponent<AudioSource>();
     }
     void Start()
     {
@@ -34,6 +40,7 @@ public class SnakeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         healthBar.UpdateHealthBar(currentHealth, maxHealth);
         if ((currentHealth <= 0))
         {
@@ -43,6 +50,7 @@ public class SnakeController : MonoBehaviour
         
         if(timer < 0)
         {
+            StartCoroutine(moveEffect());
             direction = -direction;
             timer = changeTime;
         }
@@ -95,6 +103,17 @@ public class SnakeController : MonoBehaviour
         currentHealth += amount;
 
         
+    }
+
+    IEnumerator moveEffect()
+    {
+        PlaySound(moveSound);
+        yield return new WaitForSeconds(2);
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
 }

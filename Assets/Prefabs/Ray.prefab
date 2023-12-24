@@ -133,6 +133,8 @@ MonoBehaviour:
   damageSound: {fileID: 8300000, guid: 9310df66011c7994aa74f5fdbe02474b, type: 3}
   shootSound: {fileID: 8300000, guid: acfa0b86581d68344a8ee45e459ce125, type: 3}
   stabSound: {fileID: 8300000, guid: 468a51716a3738c4f8528c54ee1c11d2, type: 3}
+  walkSound: {fileID: 8300000, guid: 358cf5f6ae62f6c43b65638941aa1ce7, type: 3}
+  collectSound: {fileID: 8300000, guid: 6e83216c50319434f9823a1fb902bce4, type: 3}
 --- !u!50 &7551626819917810174
 Rigidbody2D:
   serializedVersion: 4
@@ -171,7 +173,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -315,6 +317,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6168321428457379419, guid: 0d8b1ddcf3356504a9c6405136697f04, type: 3}
       propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168321428457379419, guid: 0d8b1ddcf3356504a9c6405136697f04, type: 3}
+      propertyPath: moveWithTransform
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6279291750802979340, guid: 0d8b1ddcf3356504a9c6405136697f04, type: 3}

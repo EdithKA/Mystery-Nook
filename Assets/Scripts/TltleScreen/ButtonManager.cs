@@ -6,14 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
+    AudioSource audioSource;
+    [SerializeField] private AudioClip buttonClick;
 
-    public void onPlayButtonClick()
+    private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public void OnPlayButtonClick()
+    {
+        PlaySound(buttonClick); 
         SceneManager.LoadScene(sceneName: "Level");
     }
     public void OnExitButtonClick()
     {
+        PlaySound(buttonClick); 
         Application.Quit();
     }
 
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
 }
