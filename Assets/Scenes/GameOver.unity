@@ -452,7 +452,7 @@ RectTransform:
   - {fileID: 2067449256}
   - {fileID: 1401672212}
   - {fileID: 355200627}
-  m_Father: {fileID: 1594119671}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -611,8 +611,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1554359968}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067449255
@@ -716,6 +715,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 296869663}
+    - target: {fileID: 7894233657963418589, guid: 23c4ddde1ec86a3488707da7f6993477, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnExitButtonClick
+      objectReference: {fileID: 0}
     - target: {fileID: 8754678520196058034, guid: 23c4ddde1ec86a3488707da7f6993477, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -910,6 +913,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1554359968}
   - {fileID: 1594119671}
   - {fileID: 500601803}
   - {fileID: 296869664}

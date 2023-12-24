@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
+using UnityEngine.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -182,10 +182,11 @@ public class PlayerController : MonoBehaviour
         isAttacking = true;
         speed = 0;
 
-        Vector2 arrowSpawnPosition = rigidbody2d.position + Vector2.up * 0.5f; // Ajusta la posición en el eje Y
 
         if (weapon == "Crossbow")
         {
+            Vector2 arrowSpawnPosition = rigidbody2d.position + Vector2.up * 0.5f; // Ajusta la posición en el eje Y
+
             arrowObject = Instantiate(arrowPrefab, arrowSpawnPosition, Quaternion.identity);
             Arrow arrow = arrowObject.GetComponent<Arrow>();
             arrow.shootDirection = lookDirection;

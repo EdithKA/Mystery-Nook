@@ -393,6 +393,14 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 7894233657963418589, guid: 23c4ddde1ec86a3488707da7f6993477, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5775698558682394165}
+    - target: {fileID: 7894233657963418589, guid: 23c4ddde1ec86a3488707da7f6993477, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnExitButtonClick
+      objectReference: {fileID: 0}
     - target: {fileID: 8754678520196058034, guid: 23c4ddde1ec86a3488707da7f6993477, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -711,6 +719,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6d1c51e0f157d24fb60dac8f38d82af, type: 3}
+--- !u!114 &5775698558682394165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260516772491105521, guid: e6d1c51e0f157d24fb60dac8f38d82af, type: 3}
+  m_PrefabInstance: {fileID: 5775698558682394164}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13df9f002d4ae3d48bb2c413836024b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
