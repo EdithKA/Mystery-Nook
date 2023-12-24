@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class FreddyController : MonoBehaviour
 {
-    public float speed;
+    [SerializeField] float speed;
+    [SerializeField] float health, maxHealth;
+    [SerializeField] HealthBarController healthBar;
     public float changeTime = 3.0f;
 
     private Rigidbody2D rb;
@@ -14,15 +16,26 @@ public class FreddyController : MonoBehaviour
 
     private Animator animator;
 
-    void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+        healthBar = GetComponentInChildren<HealthBarController>();
+    }
+
+    void Start()
+    {
+        
     }
 
     void Update()
     {
+        healthBar.UpdateHealthBar(health, maxHealth);
+        if (health == 0)
+        {
+            Destroy(this.gameObject);
+        }
         animator.SetBool("Vertical", currentDirection == 1 || currentDirection == 3);
     }
 
@@ -84,5 +97,17 @@ public class FreddyController : MonoBehaviour
         {
             ChangeDirection();
         }
+        if(collision.gameObject.tag == "arrow")
+        {
+            ChangeHealth(-1);
+        }
+    }
+
+    public void ChangeHealth(int amount)
+    {
+        
+        health += amount;
+        
+        Debug.Log(health);
     }
 }

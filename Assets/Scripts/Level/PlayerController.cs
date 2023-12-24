@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
     bool isAttacking = false;
     bool isWalking = false;
+    string weapon;
 
     public float timeInvincible = 2.0f;
     private bool isInvincible;
@@ -115,9 +116,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
+            
             if (Inventory.Contains("Crossbow"))
             {
-                StartCoroutine(Attack("Crossbow"));
+                weapon = "Crossbow";
+                StartCoroutine(Attack());
             }
             else
             {
@@ -129,7 +132,8 @@ public class PlayerController : MonoBehaviour
         {
             if (Inventory.Contains("Knife"))
             {
-                StartCoroutine(Attack("Knife"));
+                weapon = "Knife";
+                StartCoroutine(Attack());
             }
             else
             {
@@ -176,7 +180,7 @@ public class PlayerController : MonoBehaviour
         heartsBarController.DrawHearts();
     }
 
-    private IEnumerator Attack(string weapon)
+    private IEnumerator Attack()
     {
         isWalking = false;
         isAttacking = true;
@@ -215,30 +219,52 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        GameObject collisionObject = collision.gameObject;
+        if (isAttacking && weapon == "Knife")
         {
-            ChangeHealth(-1);
-        }
-        if (collision.gameObject.name == "Shelter")
-        {
-            if (numKeys == 2)
+            switch(collisionObject.tag)
             {
-                gameManager.changeScene("End");
+                case "Bear":
+                    collisionObject.GetComponent<FreddyController>().ChangeHealth(-2);
+                    break;
+                case "Snake":
+                    Destroy(collisionObject);
+                    break;
+
             }
         }
+        else
+        {
 
-        if (collision.gameObject.tag == "HealthCollectible")
-        {
-            ChangeHealth(1);
-            HealthEffect.Play();
-            Destroy(collision.gameObject);
+            switch(collisionObject.tag)
+            {
+                case "Snake":
+                    ChangeHealth(-1);
+                    break;
+                case "Bear":
+                    ChangeHealth(-2);
+                    break;
+                case "House":
+                    if (numKeys == 2)
+                    {
+                        gameManager.changeScene("End");
+                    }
+                    break;
+                case "HealthCollectible":
+                    ChangeHealth(1);
+                    HealthEffect.Play();
+                    Destroy(collision.gameObject);
+                    break;
+                case "post":
+                    gameManager.SetSignText(collision.gameObject.name);
+                    gameManager.ViewSign();
+                    break;
+            }
+
         }
-        if (collision.gameObject.tag == "post")
-        {
-            gameManager.SetSignText(collision.gameObject.name);
-            gameManager.ViewSign();
-            
-        }
+
+
+        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
