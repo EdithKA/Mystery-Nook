@@ -306,7 +306,7 @@ public class PlayerController : MonoBehaviour
 
         StartCoroutine(ViewHelpText(objectCollected));
         inventoryController.ObjectCollected(objectCollected);
-        if (collision.gameObject.tag == "Object" || collision.gameObject.tag == "HealthCollectible") { 
+        if (collision.gameObject.tag == "Object" || collision.gameObject.tag == "HealthCollectible" || collision.gameObject.tag == "Key") { 
             Destroy(collision.gameObject);
             CollectEffect.Play();
             PlaySound(collectSound);

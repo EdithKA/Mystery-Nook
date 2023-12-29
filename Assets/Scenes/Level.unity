@@ -42235,6 +42235,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2421027206677893996, guid: a7e321a8d29a523499886a936082c6c1, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3592504358524499859, guid: a7e321a8d29a523499886a936082c6c1, type: 3}
       propertyPath: textDialog
       value: 
@@ -42383,11 +42387,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2728627212210301599, guid: f8436e37b97821343892a47a5f547863, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.551508
+      value: -23.71
       objectReference: {fileID: 0}
     - target: {fileID: 2728627212210301599, guid: f8436e37b97821343892a47a5f547863, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.142935
+      value: -12.87
       objectReference: {fileID: 0}
     - target: {fileID: 2728627212210301599, guid: f8436e37b97821343892a47a5f547863, type: 3}
       propertyPath: m_LocalPosition.z

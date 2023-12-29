@@ -2121,7 +2121,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Use G key to shoot
+  m_Text: Use T key to shoot
 --- !u!222 &1477266180
 CanvasRenderer:
   m_ObjectHideFlags: 0
