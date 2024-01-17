@@ -13,6 +13,7 @@ TagManager:
   - Bear
   - House
   - Weapon
+  - DestructibleObject
   layers:
   - Default
   - TransparentFX

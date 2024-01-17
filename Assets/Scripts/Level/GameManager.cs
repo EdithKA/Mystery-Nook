@@ -54,6 +54,12 @@ public class GameManager : MonoBehaviour
             case "MushroomPost":
                 signText.text = "Mushrooms give you life";
                 break;
+            case "bridgePost":
+                signText.text = "Is there a way to unlock the bridge?";
+                break;
+            case "boxPost":
+                signText.text = "Maybe you can break the boxes";
+                break;
             default:
                 signText.text = "";
                 break;

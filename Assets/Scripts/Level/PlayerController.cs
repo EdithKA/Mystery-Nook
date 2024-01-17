@@ -30,13 +30,14 @@ public class PlayerController : MonoBehaviour
     private InventoryController inventoryController;
     public ParticleSystem CollectEffect;
 
+    List<string> Inventory = new List<string>();
 
-    List<String> Inventory = new List<String>();
-
-    bool hasCrossbow = false;
     public int numKeys = 0;
 
-    bool isAttacking = false;
+    bool canAttack = true;
+    public float attackCooldown = 1.0f; // Tiempo entre ataques
+    public float attackDuration = 0.01f; // Duración del ataque
+    public bool isAttacking = false;
     bool isWalking = false;
     string weapon;
 
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Vector2 lookDirection = new Vector2(1, 0);
 
-    public AudioClip damageSound, shootSound, stabSound, walkSound, collectSound, healEffet;
+    public AudioClip damageSound, shootSound, stabSound, walkSound, collectSound, healEffect;
     private AudioSource audioSource;
 
     private void Awake()
@@ -56,10 +57,8 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(hasCrossbow);
         gameManager = FindAnyObjectByType<GameManager>();
         heartsBarController = FindObjectOfType<HeartsBarController>();
 
@@ -70,7 +69,6 @@ public class PlayerController : MonoBehaviour
         inventoryController = FindObjectOfType<InventoryController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (currentHealth <= 0)
@@ -89,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
             if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
             {
-               if(!audioSource.isPlaying)
+                if (!audioSource.isPlaying)
                 {
                     PlaySound(walkSound);
                 }
@@ -117,36 +115,38 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", move.magnitude);
         OnPlayerDamaged?.Invoke();
 
-
         if (Input.GetKeyDown(KeyCode.G))
         {
-            
             if (Inventory.Contains("Crossbow"))
             {
-                weapon = "Crossbow";
-                StartCoroutine(Attack());
+                if (canAttack)
+                {
+                    weapon = "Crossbow";
+                    StartCoroutine(Attack());
+                }
+                
             }
             else
             {
                 StartCoroutine(ViewHelpText("NoCrossbow"));
-                
             }
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
             if (Inventory.Contains("Knife"))
             {
-                weapon = "Knife";
-                StartCoroutine(Attack());
+                if(canAttack)
+                {
+                    weapon = "Knife";
+                    StartCoroutine(Attack());
+                }
+          
             }
             else
             {
                 StartCoroutine(ViewHelpText("NoKnife"));
             }
         }
-
-       
-       
     }
 
     void FixedUpdate()
@@ -158,14 +158,12 @@ public class PlayerController : MonoBehaviour
         rigidbody2d.MovePosition(position);
         if (isInvincible)
         {
-            // Manejar el parpadeo durante el período de invulnerabilidad
             GetComponent<SpriteRenderer>().enabled = !GetComponent<SpriteRenderer>().enabled;
         }
         else
         {
-            GetComponent<SpriteRenderer>().enabled = true; // Asegurar que el sprite sea visible cuando no es invulnerable
+            GetComponent<SpriteRenderer>().enabled = true;
         }
-
     }
 
     public void ChangeHealth(int amount)
@@ -178,9 +176,8 @@ public class PlayerController : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-            
         }
-        
+
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         heartsBarController.DrawHearts();
     }
@@ -191,11 +188,9 @@ public class PlayerController : MonoBehaviour
         isAttacking = true;
         speed = 0;
 
-
         if (weapon == "Crossbow")
         {
-            Vector2 arrowSpawnPosition = rigidbody2d.position + Vector2.up * 0.5f; // Ajusta la posición en el eje Y
-
+            Vector2 arrowSpawnPosition = rigidbody2d.position + Vector2.up * 0.5f;
             arrowObject = Instantiate(arrowPrefab, arrowSpawnPosition, Quaternion.identity);
             Arrow arrow = arrowObject.GetComponent<Arrow>();
             arrow.shootDirection = lookDirection;
@@ -203,20 +198,35 @@ public class PlayerController : MonoBehaviour
 
             animator.SetTrigger("Shoot");
             PlaySound(shootSound);
+
+            yield return new WaitForSeconds(attackDuration); // Espera a que termine el ataque
+
+            isAttacking = false;
+            speed = 3.0f;
+
+            StartCoroutine(AttackCooldown());
         }
         else if (weapon == "Knife")
         {
             animator.SetTrigger("Stab");
             PlaySound(stabSound);
+            yield return new WaitForFixedUpdate();
+
+            isAttacking = false;
+            speed = 3.0f;
+
+            StartCoroutine(AttackCooldown());
         }
-
-        yield return new WaitForSeconds(0.3f);
-
-        isAttacking = false;
-        speed = 3.0f;
     }
 
+   
 
+    private IEnumerator AttackCooldown()
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
 
     public void PlaySound(AudioClip clip)
     {
@@ -226,23 +236,9 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject collisionObject = collision.gameObject;
-        if (isAttacking && weapon == "Knife")
+        if (!isAttacking) //No lo coloco en el stay porque si no el audio de recibir daño se reproduce múltiples veces seguidas
         {
-            switch(collisionObject.tag)
-            {
-                case "Bear":
-                    
-                    break;
-                case "Snake":
-                    collisionObject.GetComponent<SnakeController>().ChangeHealth(-3);
-                    break;
-
-            }
-        }
-        else
-        {
-
-            switch(collisionObject.tag)
+            switch (collisionObject.tag)
             {
                 case "Snake":
                     ChangeHealth(-1);
@@ -250,31 +246,48 @@ public class PlayerController : MonoBehaviour
                 case "Bear":
                     ChangeHealth(-2);
                     break;
-                case "House":
-                    if (numKeys == 2)
-                    {
-                        gameManager.changeScene("End");
-                    }
-                    break;
-                case "HealthCollectible":
-                    if(currentHealth < maxHealth)
-                    {
-                        ChangeHealth(1);
-                        HealthEffect.Play();
-                        PlaySound(healEffet);
-                        Destroy(collision.gameObject);
-                    }
-                    break;
-                case "post":
-                    gameManager.SetSignText(collision.gameObject.name);
-                    gameManager.ViewSign();
-                    break;
             }
-
         }
+        switch (collisionObject.tag)
+        {
 
+            case "House":
+                if (numKeys == 2)
+                {
+                    gameManager.changeScene("End");
+                }
+                break;
+            case "HealthCollectible":
+                if (currentHealth < maxHealth)
+                {
+                    ChangeHealth(1);
+                    HealthEffect.Play();
+                    PlaySound(healEffect);
+                    Destroy(collision.gameObject);
+                }
+                break;
+            case "post":
+                gameManager.SetSignText(collision.gameObject.name);
+                gameManager.ViewSign();
+                break;
+            
+        }
+    }
 
-        
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        GameObject collisionObject = collision.gameObject;
+        if (isAttacking && weapon == "Knife")
+        {
+            switch (collisionObject.tag)
+            {
+           
+                case "Snake":
+                    collisionObject.GetComponent<SnakeController>().ChangeHealth(-3);
+                    break;
+               
+            }
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -287,43 +300,37 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         string objectCollected = collision.gameObject.name;
 
         if (collision.gameObject.tag == "Weapon")
         {
             Inventory.Add(objectCollected);
         }
-        
+
         StartCoroutine(ViewHelpText(objectCollected));
         inventoryController.ObjectCollected(objectCollected);
 
-        if (collision.gameObject.tag == "Object" || collision.gameObject.tag == "HealthCollectible" || collision.gameObject.tag == "Key" || collision.gameObject.tag == "Weapon") { 
-
-            if(collision.gameObject.tag == "Key") { numKeys += 1;  }
+        if (collision.gameObject.tag == "Object" || collision.gameObject.tag == "HealthCollectible" || collision.gameObject.tag == "Key" || collision.gameObject.tag == "Weapon")
+        {
+            if (collision.gameObject.tag == "Key") { numKeys += 1; }
             Destroy(collision.gameObject);
             CollectEffect.Play();
             PlaySound(collectSound);
         }
     }
 
-
     private IEnumerator ViewHelpText(string helpCase)
     {
         gameManager.setHelpText(helpCase);
-
         yield return new WaitForSeconds(1f);
-
         gameManager.setHelpText("Default");
     }
 
     private IEnumerator Death()
     {
-        rigidbody2d.simulated = false; //Desactivo el rigidbody para que cuando el personaje se muera no choque con nada ni pueda moverse
+        rigidbody2d.simulated = false;
         animator.SetTrigger("Death");
-
         yield return new WaitForSeconds(2.5f);
-
         gameManager.changeScene("GameOver");
     }
 }

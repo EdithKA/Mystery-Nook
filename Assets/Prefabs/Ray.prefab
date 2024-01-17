@@ -129,12 +129,17 @@ MonoBehaviour:
   HealthEffect: {fileID: 7115374068583065926}
   arrowPrefab: {fileID: 6709994780551522278, guid: f3a95b0c7caa86d498c894d5f2bd9dc4, type: 3}
   CollectEffect: {fileID: 6559435832919045708}
+  numKeys: 0
+  attackCooldown: 1
+  attackDuration: 0.01
+  isAttacking: 0
   timeInvincible: 2
   damageSound: {fileID: 8300000, guid: 9310df66011c7994aa74f5fdbe02474b, type: 3}
   shootSound: {fileID: 8300000, guid: acfa0b86581d68344a8ee45e459ce125, type: 3}
   stabSound: {fileID: 8300000, guid: 468a51716a3738c4f8528c54ee1c11d2, type: 3}
   walkSound: {fileID: 8300000, guid: 358cf5f6ae62f6c43b65638941aa1ce7, type: 3}
-  collectSound: {fileID: 8300000, guid: 6e83216c50319434f9823a1fb902bce4, type: 3}
+  collectSound: {fileID: 8300000, guid: da4411814ceaaaf45a47353fc71f9d45, type: 3}
+  healEffect: {fileID: 8300000, guid: 35cb843cc27a8a645ac4ebec49c653bf, type: 3}
 --- !u!50 &7551626819917810174
 Rigidbody2D:
   serializedVersion: 4
@@ -180,7 +185,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 68
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

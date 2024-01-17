@@ -25,6 +25,12 @@ public class ButtonManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void onMainMenuClick()
+    {
+        PlaySound(buttonClick);
+        SceneManager.LoadScene(sceneName: "MainMenu");
+    }
+
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
