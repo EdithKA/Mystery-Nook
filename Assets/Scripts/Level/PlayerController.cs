@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Xml.Linq;
 
 public class PlayerController : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
     List<String> Inventory = new List<String>();
 
     bool hasCrossbow = false;
-    int numKeys = 0;
+    public int numKeys = 0;
 
     bool isAttacking = false;
     bool isWalking = false;
@@ -209,7 +210,7 @@ public class PlayerController : MonoBehaviour
             PlaySound(stabSound);
         }
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
 
         isAttacking = false;
         speed = 3.0f;
@@ -286,27 +287,20 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
         string objectCollected = collision.gameObject.name;
 
-        switch (objectCollected)
+        if (collision.gameObject.tag == "Weapon")
         {
-            case "Crossbow":
-                Inventory.Add("Crossbow");
-                break;
-            case "Knife":
-                Inventory.Add("Knife");
-                break;
-            case "Key":
-                numKeys += 1;
-                break;
-            default:
-                break;
+            Inventory.Add(objectCollected);
         }
-
+        
         StartCoroutine(ViewHelpText(objectCollected));
         inventoryController.ObjectCollected(objectCollected);
-        if (collision.gameObject.tag == "Object" || collision.gameObject.tag == "HealthCollectible" || collision.gameObject.tag == "Key") { 
+
+        if (collision.gameObject.tag == "Object" || collision.gameObject.tag == "HealthCollectible" || collision.gameObject.tag == "Key" || collision.gameObject.tag == "Weapon") { 
+
+            if(collision.gameObject.tag == "Key") { numKeys += 1;  }
             Destroy(collision.gameObject);
             CollectEffect.Play();
             PlaySound(collectSound);
@@ -325,6 +319,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Death()
     {
+        rigidbody2d.simulated = false; //Desactivo el rigidbody para que cuando el personaje se muera no choque con nada ni pueda moverse
         animator.SetTrigger("Death");
 
         yield return new WaitForSeconds(2.5f);

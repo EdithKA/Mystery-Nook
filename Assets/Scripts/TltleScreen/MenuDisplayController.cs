@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MenuDisplayController : MonoBehaviour
 {
     public GameObject menu;
-    AudioSource audioSource;
+    public AudioSource audioSource;
     [SerializeField] private AudioClip buttonClick;
 
     private void Awake()

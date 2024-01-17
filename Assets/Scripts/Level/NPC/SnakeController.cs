@@ -22,6 +22,8 @@ public class SnakeController : MonoBehaviour
     AudioSource audioSource;
     [SerializeField] AudioClip moveSound;
 
+    bool attacking;
+
 
     private void Awake()
     {
@@ -30,6 +32,7 @@ public class SnakeController : MonoBehaviour
         animator = GetComponent<Animator>();
         healthBar = GetComponentInChildren<HealthBarController>();
         audioSource = GetComponent<AudioSource>();
+        attacking = false;
     }
     void Start()
     {
@@ -41,18 +44,21 @@ public class SnakeController : MonoBehaviour
     void Update()
     {
         
-        healthBar.UpdateHealthBar(currentHealth, maxHealth);
-        if ((currentHealth <= 0))
+        if(!attacking)
         {
-            StartCoroutine(Death());
-        }
-        timer -= Time.deltaTime;
-        
-        if(timer < 0)
-        {
-            StartCoroutine(moveEffect());
-            direction = -direction;
-            timer = changeTime;
+            healthBar.UpdateHealthBar(currentHealth, maxHealth);
+            if ((currentHealth <= 0))
+            {
+                StartCoroutine(Death());
+            }
+            timer -= Time.deltaTime;
+
+            if (timer < 0)
+            {
+                StartCoroutine(moveEffect());
+                direction = -direction;
+                timer = changeTime;
+            }
         }
     }
 
@@ -95,6 +101,10 @@ public class SnakeController : MonoBehaviour
         {
             ChangeHealth(-1);
         }
+        if (collision.gameObject.tag == "Player")
+        {
+            StartCoroutine(Attack());
+        }
     }
 
     public void ChangeHealth(int amount)
@@ -114,6 +124,16 @@ public class SnakeController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    IEnumerator Attack()
+    {
+        attacking = true;
+        float prevSpeed = speed;
+        speed = 0;
+        yield return new WaitForSeconds(1f);
+        attacking = false;
+        speed = prevSpeed;
     }
 
 }

@@ -1057,13 +1057,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 47e3a354d6d906f43b13148da6d1d244, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.556
+  m_Volume: 0.191
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1167,6 +1167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 1438157995}
+  audioSource: {fileID: 715461828}
   buttonClick: {fileID: 8300000, guid: 927eca6c553e5d54cae88c2931e9114e, type: 3}
 --- !u!82 &715461828
 AudioSource:
@@ -1186,7 +1187,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

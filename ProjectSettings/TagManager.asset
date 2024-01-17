@@ -12,6 +12,7 @@ TagManager:
   - Snake
   - Bear
   - House
+  - Weapon
   layers:
   - Default
   - TransparentFX

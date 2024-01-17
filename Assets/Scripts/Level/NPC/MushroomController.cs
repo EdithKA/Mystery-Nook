@@ -19,13 +19,7 @@ public class MushroomController : MonoBehaviour
     void Start()
     {
         
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-
-        timer = waitTime;
-
-        // Iniciar el movimiento cuando comienza el juego
-        StartWalking();
+        
     }
 
     // Update is called once per frame

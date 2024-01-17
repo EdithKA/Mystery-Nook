@@ -51,6 +51,9 @@ public class GameManager : MonoBehaviour
             case "Key2Sign":
                 signText.text = "There's a key lost in the forest";
                 break;
+            case "MushroomPost":
+                signText.text = "Mushrooms give you life";
+                break;
             default:
                 signText.text = "";
                 break;

@@ -22,8 +22,11 @@ public class FreddyController : MonoBehaviour
     AudioSource audioSource;
     [SerializeField] AudioClip moveSound;
 
+    bool attacking;
+
     private void Awake()
     {
+        attacking = false;
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
@@ -49,14 +52,17 @@ public class FreddyController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!changingDirection)
+        if(!attacking)
         {
-            Move();
-            timer -= Time.deltaTime;
-
-            if (timer < 0)
+            if (!changingDirection)
             {
-                ChangeDirection();
+                Move();
+                timer -= Time.deltaTime;
+
+                if (timer < 0)
+                {
+                    ChangeDirection();
+                }
             }
         }
     }
@@ -110,6 +116,10 @@ public class FreddyController : MonoBehaviour
         {
             ChangeHealth(-1);
         }
+        if (collision.gameObject.tag == "Player")
+        {
+            StartCoroutine(Attack());
+        }
     }
 
     public void ChangeHealth(int amount)
@@ -128,5 +138,15 @@ public class FreddyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    IEnumerator Attack()
+    {
+        attacking = true;
+        float prevSpeed = speed;
+        speed = 0;
+        yield return new WaitForSeconds(1f);
+        attacking = false;
+        speed = prevSpeed;
     }
 }

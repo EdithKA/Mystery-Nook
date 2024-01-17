@@ -34,8 +34,6 @@ public class CatController : MonoBehaviour
     void Update()
     {
 
-        
-
         timer -= Time.deltaTime;
 
         if (timer <= 0)
@@ -95,11 +93,7 @@ public class CatController : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
-        
-    }
+  
 
     void setAnimation()
     {
